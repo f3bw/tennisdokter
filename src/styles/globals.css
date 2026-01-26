@@ -1,0 +1,11 @@
+@layer reset, preflight, global, pages, components, overrides;
+
+@layer global {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    #root {
+        min-height: 100dvh;
+    }
+}

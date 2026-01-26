@@ -1,0 +1,129 @@
+@layer components {
+    /* Base Card Styles */
+    .base {
+        background-color: hsl(0deg 0% 100%);
+        border: 1px solid hsl(0deg 0% 89%);
+        border-radius: 0.5rem;
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .base:has(.title-link:hover) {
+        border-color: hsl(0deg 0% 70%);
+        box-shadow:
+            0 4px 6px -1px rgb(0 0 0 / 10%),
+            0 2px 4px -2px rgb(0 0 0 / 10%);
+    }
+
+    .base:has(.title-link:focus-visible) {
+        box-shadow:
+            0 0 0 2px hsl(0deg 0% 100%),
+            0 0 0 4px hsl(221deg 83% 53%);
+    }
+
+    /* Layout Variants */
+    .stacked {
+        flex-direction: column;
+    }
+
+    .horizontal {
+        flex-direction: row;
+    }
+
+    /* Image Container */
+    .image {
+        background-color: hsl(0deg 0% 96%);
+        flex-shrink: 0;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .stacked .image {
+        aspect-ratio: 16 / 9;
+        width: 100%;
+    }
+
+    .horizontal .image {
+        align-self: stretch;
+        width: 12rem;
+    }
+
+    .image img {
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+        width: 100%;
+    }
+
+    .base:has(.title-link:hover) .image img {
+        transform: scale(1.05);
+    }
+
+    /* Body Container */
+    .body {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+
+    /* Title */
+    .title {
+        color: hsl(0deg 0% 9%);
+        font-size: 1.25rem;
+        font-weight: 700;
+        line-height: 1.3;
+        margin: 0;
+    }
+
+    /* Title Link - Stretched Link Pattern */
+    .title-link {
+        color: inherit;
+        position: static;
+        text-decoration: none;
+    }
+
+    .title-link::before {
+        border-radius: inherit;
+        content: '';
+        inset: 0;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .title-link:focus-visible {
+        outline: none;
+    }
+
+    /* CTA - Higher z-index to be clickable above stretched link */
+    .cta {
+        margin-top: auto;
+        position: relative;
+        z-index: 2;
+    }
+
+    .cta a,
+    .cta button {
+        position: relative;
+        z-index: 2;
+    }
+
+    /* Description */
+    .description {
+        color: hsl(0deg 0% 40%);
+        font-size: 0.875rem;
+        line-height: 1.5;
+        margin: 0;
+    }
+
+    /* Footer */
+    .footer {
+        color: hsl(0deg 0% 55%);
+        font-size: 0.75rem;
+        margin-top: auto;
+        padding-top: 0.5rem;
+    }
+}
