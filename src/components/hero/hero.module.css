@@ -1,61 +1,58 @@
 @layer components {
     .hero {
-        align-items: center;
         background: linear-gradient(
             135deg,
             var(--color-primary-light) 0%,
             var(--color-bg) 50%
         );
-        display: flex;
-        justify-content: center;
         min-height: 100dvh;
-        padding-block: var(--spacing-2xl);
+        overflow: hidden;
         position: relative;
-        text-align: center;
     }
 
-    .container {
-        display: flex;
-        flex-direction: column;
-        gap: var(--spacing-lg);
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
         margin-inline: auto;
-        max-width: 600px;
+        max-width: var(--container-max);
+        min-height: 100dvh;
         padding-inline: var(--container-padding);
         position: relative;
-        width: 100%;
         z-index: 1;
     }
 
-    .logo {
-        align-items: center;
+    @media (width >= 768px) {
+        .wrapper {
+            align-items: center;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-xl);
+        }
+    }
+
+    .content {
         display: flex;
         flex-direction: column;
-        gap: var(--spacing-md);
+        gap: var(--spacing-lg);
+        padding-block: var(--spacing-2xl);
     }
 
-    .logo-placeholder {
-        align-items: center;
-        background-color: var(--color-primary);
-        border-radius: var(--radius-lg);
-        box-shadow: var(--shadow-lg);
-        display: flex;
-        height: 100px;
-        justify-content: center;
-        width: 100px;
-    }
-
-    .logo-text {
-        color: var(--color-text-light);
-        font-size: 2.5rem;
-        font-weight: 700;
+    @media (width >= 768px) {
+        .content {
+            padding-block: 0;
+        }
     }
 
     .logo-title {
         color: var(--color-primary-dark);
+        font-family: var(--font-display);
         font-size: clamp(2rem, 8vw, 3rem);
-        font-weight: 700;
         letter-spacing: -0.02em;
+        font-weight: 400;
         line-height: 1.1;
+    }
+
+    .bold {
+        font-weight: 700;
     }
 
     .tagline {
@@ -69,11 +66,12 @@
         color: var(--color-text-muted);
         font-size: 1.125rem;
         line-height: 1.6;
+        max-width: 480px;
     }
 
     .cta {
         align-items: center;
-        align-self: center;
+        align-self: flex-start;
         background-color: var(--color-whatsapp);
         border-radius: var(--radius-full);
         box-shadow: var(--shadow-md);
@@ -128,7 +126,6 @@
         align-items: baseline;
         display: flex;
         gap: var(--spacing-sm);
-        justify-content: center;
         margin-top: var(--spacing-sm);
     }
 
@@ -141,6 +138,51 @@
     .price-text {
         color: var(--color-text-muted);
         font-size: 1rem;
+    }
+
+    .visual {
+        display: none;
+        height: 100%;
+        min-height: 500px;
+        position: relative;
+    }
+
+    @media (width >= 768px) {
+        .visual {
+            display: block;
+        }
+    }
+
+    .canvas-matter {
+        height: 100%;
+        position: relative;
+        width: 100%;
+    }
+
+    .canvas-matter-before {
+        padding-top: 100%;
+    }
+
+    .canvas-matter-target {
+        height: 100%;
+        left: 0;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+    .canvas-matter-target canvas {
+        bottom: -1px;
+        left: -1px;
+        max-height: calc(100% + 2px);
+        max-width: calc(100% + 2px);
+        min-height: calc(100% + 2px);
+        min-width: calc(100% + 2px);
+        pointer-events: all;
+        position: relative;
+        right: -1px;
+        top: -1px;
     }
 
     .decoration {

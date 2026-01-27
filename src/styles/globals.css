@@ -69,7 +69,8 @@
         --color-whatsapp-dark: hsl(142deg 70% 42%);
 
         /* Typography */
-        --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+        --font-sans: var(--font-geist), system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+        --font-display: var(--font-dm-sans), system-ui, sans-serif;
 
         /* Container */
         --container-max: 1200px;
@@ -204,5 +205,10 @@
         position: absolute;
         white-space: nowrap;
         width: 1px;
+    }
+
+    /* Display font (DM Sans) utility class */
+    .font-display {
+        font-family: var(--font-display);
     }
 }
