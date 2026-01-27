@@ -98,11 +98,24 @@
         font-size: 1.0625rem;
         font-weight: 600;
         padding: var(--spacing-md);
+        position: relative;
         transition: background-color 0.2s ease;
     }
 
-    .card-cta:hover {
+    .card-cta-inner {
+        position: relative;
+        z-index: 1;
+    }
+
+    .card-cta-bg {
+        inset: 0;
+        position: absolute;
+        z-index: 0;
+    }
+
+    .card-cta :global(.cursor-bg) {
         background-color: var(--color-whatsapp-dark);
+        opacity: 1;
     }
 
     .card-cta:focus-visible {

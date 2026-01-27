@@ -111,7 +111,25 @@
         font-weight: 600;
         margin-top: var(--spacing-md);
         padding: var(--spacing-md) var(--spacing-xl);
+        position: relative;
         transition: all 0.2s ease;
+    }
+
+    .cta-inner {
+        position: relative;
+        z-index: 1;
+    }
+
+    .cta-bg {
+        border-radius: inherit;
+        inset: 0;
+        position: absolute;
+        z-index: 0;
+    }
+
+    .cta :global(.cursor-bg) {
+        background-color: rgb(255 255 255 / 80%);
+        opacity: 1;
     }
 
     .cta:hover {

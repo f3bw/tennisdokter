@@ -80,8 +80,15 @@ export const Pricing = () => {
                         className={styles['card-cta']}
                         target="_blank"
                         rel="noopener noreferrer"
+                        data-magnetic-cursor-target
                     >
-                        Start via WhatsApp
+                        <span className={styles['card-cta-inner']}>
+                            Start via WhatsApp
+                        </span>
+                        <span
+                            className={styles['card-cta-bg']}
+                            data-magnetic-cursor-bg
+                        />
                     </a>
                 </div>
 

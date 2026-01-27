@@ -1,0 +1,26 @@
+@layer components {
+    .cursor {
+        aspect-ratio: 1;
+        border-radius: 100em;
+        display: none;
+        pointer-events: none;
+        position: fixed;
+        inset: 0 auto auto 0;
+        width: 0.75em;
+        z-index: 9999;
+    }
+
+    @media (width >= 768px) and (pointer: fine) {
+        .cursor {
+            display: block;
+        }
+    }
+}
+
+/* Global class for cursor-bg so it can be styled from other components */
+:global(.cursor-bg) {
+    background-color: var(--color-text-light);
+    border-radius: inherit;
+    height: 100%;
+    width: 100%;
+}

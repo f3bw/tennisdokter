@@ -34,9 +34,29 @@
     }
 
     .link {
+        border-radius: var(--radius-sm);
         color: rgb(255 255 255 / 70%);
         font-size: 0.9375rem;
+        padding: 0.5em 0.75em;
+        position: relative;
         transition: color 0.2s ease;
+    }
+
+    .link-text {
+        position: relative;
+        z-index: 1;
+    }
+
+    .link-bg {
+        border-radius: inherit;
+        display: block;
+        inset: 0;
+        position: absolute;
+        z-index: 0;
+    }
+
+    .link :global(.cursor-bg) {
+        background-color: rgb(255 255 255 / 20%);
     }
 
     .link:hover {
@@ -50,11 +70,33 @@
 
     .contact-link {
         align-items: center;
+        border-radius: var(--radius-sm);
         color: rgb(255 255 255 / 70%);
         display: flex;
         font-size: 0.9375rem;
-        gap: var(--spacing-xs);
+        padding: 0.5em 0.75em;
+        position: relative;
         transition: color 0.2s ease;
+    }
+
+    .contact-link-inner {
+        align-items: center;
+        display: flex;
+        gap: var(--spacing-xs);
+        position: relative;
+        z-index: 1;
+    }
+
+    .contact-link-bg {
+        border-radius: inherit;
+        inset: 0;
+        position: absolute;
+        z-index: 0;
+    }
+
+    .contact-link :global(.cursor-bg) {
+        background-color: var(--color-whatsapp);
+        opacity: 0.2;
     }
 
     .contact-link:hover {

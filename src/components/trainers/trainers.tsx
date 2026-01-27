@@ -87,8 +87,12 @@ export const Trainers = () => {
                         className={styles.cta}
                         target="_blank"
                         rel="noopener noreferrer"
+                        data-magnetic-cursor-target
                     >
-                        Neem contact op
+                        <span className={styles['cta-inner']}>
+                            Neem contact op
+                        </span>
+                        <span className={styles['cta-bg']} data-magnetic-cursor-bg />
                     </a>
                 </div>
             </div>
