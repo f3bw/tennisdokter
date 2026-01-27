@@ -11,9 +11,9 @@ import { useScrollSpy, type NavSection } from './use-scroll-spy'
 
 const NAV_SECTIONS: NavSection[] = [
     { id: 'home', label: 'Home' },
-    { id: 'over-mij', label: 'Over Mij' },
+    { id: 'over-mij', label: 'Over' },
     { id: 'hoe-werkt-het', label: 'Werkwijze' },
-    { id: 'voor-trainers', label: 'Voor Trainers' },
+    { id: 'voor-trainers', label: 'Trainers' },
     { id: 'tarieven', label: 'Tarieven' },
     { id: 'partners', label: 'Partners' },
 ]
@@ -169,35 +169,14 @@ export const ProgressNav = () => {
                         rel="noopener noreferrer"
                     >
                         <span className={styles['btn-bubble__ball']}>
-                            <svg
+                            <Image
+                                src="/logos/logo-ball-yellow.svg"
+                                alt=""
+                                width={40}
+                                height={40}
                                 className={styles['btn-bubble__ball-svg']}
-                                viewBox="0 0 24 24"
-                                fill="none"
                                 aria-hidden="true"
-                            >
-                                <circle
-                                    cx="12"
-                                    cy="12"
-                                    r="10"
-                                    fill="#c8e038"
-                                    stroke="#8aa626"
-                                    strokeWidth="1.5"
-                                />
-                                <path
-                                    d="M6 3.5c2.5 2 4 5 4 8.5s-1.5 6.5-4 8.5"
-                                    fill="none"
-                                    stroke="#fff"
-                                    strokeWidth="1.8"
-                                    strokeLinecap="round"
-                                />
-                                <path
-                                    d="M18 3.5c-2.5 2-4 5-4 8.5s1.5 6.5 4 8.5"
-                                    fill="none"
-                                    stroke="#fff"
-                                    strokeWidth="1.8"
-                                    strokeLinecap="round"
-                                />
-                            </svg>
+                            />
                         </span>
                         <span className={styles['btn-bubble__content']}>
                             <span className={styles['btn-bubble__text']}>
@@ -207,35 +186,14 @@ export const ProgressNav = () => {
                         <span
                             className={`${styles['btn-bubble__ball']} ${styles['btn-bubble__ball--duplicate']}`}
                         >
-                            <svg
+                            <Image
+                                src="/logos/logo-ball-yellow.svg"
+                                alt=""
+                                width={40}
+                                height={40}
                                 className={styles['btn-bubble__ball-svg']}
-                                viewBox="0 0 24 24"
-                                fill="none"
                                 aria-hidden="true"
-                            >
-                                <circle
-                                    cx="12"
-                                    cy="12"
-                                    r="10"
-                                    fill="#c8e038"
-                                    stroke="#8aa626"
-                                    strokeWidth="1.5"
-                                />
-                                <path
-                                    d="M6 3.5c2.5 2 4 5 4 8.5s-1.5 6.5-4 8.5"
-                                    fill="none"
-                                    stroke="#fff"
-                                    strokeWidth="1.8"
-                                    strokeLinecap="round"
-                                />
-                                <path
-                                    d="M18 3.5c-2.5 2-4 5-4 8.5s1.5 6.5 4 8.5"
-                                    fill="none"
-                                    stroke="#fff"
-                                    strokeWidth="1.8"
-                                    strokeLinecap="round"
-                                />
-                            </svg>
+                            />
                         </span>
                     </a>
                 </nav>

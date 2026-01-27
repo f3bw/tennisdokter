@@ -57,7 +57,7 @@
         width: 100%;
     }
 
-    @media (width >= 768px) {
+    @media (width >= 1024px) {
         .logo-img-mobile {
             display: none !important;
         }
@@ -70,7 +70,7 @@
         width: 160px;
     }
 
-    @media (width >= 768px) {
+    @media (width >= 1024px) {
         .logo-img-desktop {
             display: block !important;
         }
@@ -79,7 +79,7 @@
     /* Desktop nav links */
     .nav-links {
         display: none;
-        gap: var(--spacing-xs);
+        /* gap: var(--spacing-xs); */
         left: 50%;
         position: absolute;
         transform: translateX(-50%);
@@ -112,7 +112,7 @@
         height: 36px;
         line-height: 36px;
         overflow: hidden;
-        padding-inline: var(--spacing-sm);
+        padding-inline: var(--spacing-xs);
         position: relative;
         transition: color 0.2s ease;
         z-index: 1;

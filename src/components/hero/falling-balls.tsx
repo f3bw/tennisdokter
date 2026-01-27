@@ -4,42 +4,13 @@ import { useEffect, useRef } from 'react'
 
 import styles from './hero.module.css'
 
-const BALL_COLORS = [
-    '#0a9ad7', // blue
-    '#288739', // green
-    '#f08118', // orange
-    '#e42421', // red
+const BALL_TEXTURES = [
+    '/logos/logo-ball-blue-plain.svg',
+    '/logos/logo-ball-green-plain.svg',
+    '/logos/logo-ball-orange-plain.svg',
+    '/logos/logo-ball-red-plain.svg',
+    '/logos/logo-ball-yellow-plain.svg',
 ]
-
-// Create tennis ball SVG with the characteristic seam pattern (based on favicon.svg)
-const createTennisBallSVG = (color: string): string => {
-    const svg = `
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
-            <circle cx="100" cy="100" r="98" fill="${color}"/>
-            <path
-                d="M168 18
-                   C188 38, 205 70, 205 95
-                   C205 120, 185 155, 155 175"
-                fill="none"
-                stroke="white"
-                stroke-width="8"
-                stroke-linecap="round"
-            />
-            <path
-                d="M32 182
-                   C12 162, -5 130, -5 105
-                   C-5 80, 15 45, 45 25"
-                fill="none"
-                stroke="white"
-                stroke-width="8"
-                stroke-linecap="round"
-            />
-        </svg>
-    `
-    return `data:image/svg+xml,${encodeURIComponent(svg.trim())}`
-}
-
-const BALL_TEXTURES = BALL_COLORS.map(createTennisBallSVG)
 
 export const FallingBalls = () => {
     const containerRef = useRef<HTMLDivElement>(null)
@@ -109,8 +80,8 @@ export const FallingBalls = () => {
                 return texture
             }
 
-            // Calculate sprite scale (texture is 100px, scale to ball size)
-            const spriteScale = ballSize / 100
+            // Calculate sprite scale (texture is 420px, scale to ball size)
+            const spriteScale = ballSize / 420
 
             // Create tennis ball
             const createBall = () => {
