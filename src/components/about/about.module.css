@@ -1,0 +1,93 @@
+@layer components {
+    .about {
+        background-color: var(--color-bg);
+        padding-block: var(--spacing-2xl);
+    }
+
+    .container {
+        align-items: center;
+        display: grid;
+        gap: var(--spacing-xl);
+        margin-inline: auto;
+        max-width: var(--container-max);
+        padding-inline: var(--container-padding);
+        width: 100%;
+    }
+
+    @media (width >= 768px) {
+        .container {
+            gap: var(--spacing-2xl);
+            grid-template-columns: 1fr 1.5fr;
+        }
+    }
+
+    .image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .image-placeholder {
+        align-items: center;
+        aspect-ratio: 1;
+        background-color: var(--color-bg-alt);
+        border: 2px dashed var(--color-border);
+        border-radius: var(--radius-lg);
+        color: var(--color-text-muted);
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        justify-content: center;
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .image-icon {
+        height: 4rem;
+        opacity: 0.5;
+        width: 4rem;
+    }
+
+    .image-text {
+        font-size: 0.875rem;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-lg);
+    }
+
+    .title {
+        color: var(--color-primary-dark);
+        font-size: clamp(1.75rem, 5vw, 2.5rem);
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    .text {
+        color: var(--color-text);
+        font-size: 1.0625rem;
+        line-height: 1.7;
+    }
+
+    .highlights {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        list-style: none;
+        margin-top: var(--spacing-md);
+        padding: 0;
+    }
+
+    .highlight-item {
+        align-items: center;
+        display: flex;
+        font-size: 1rem;
+        gap: var(--spacing-sm);
+    }
+
+    .highlight-icon {
+        color: var(--color-primary);
+        font-weight: 700;
+    }
+}

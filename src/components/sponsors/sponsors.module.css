@@ -1,0 +1,110 @@
+@layer components {
+    .section {
+        background-color: var(--color-bg);
+        padding-block: var(--spacing-2xl);
+    }
+
+    .container {
+        margin-inline: auto;
+        max-width: var(--container-max);
+        padding-inline: var(--container-padding);
+        text-align: center;
+        width: 100%;
+    }
+
+    .title {
+        color: var(--color-text-muted);
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        margin-bottom: var(--spacing-xl);
+        text-transform: uppercase;
+    }
+
+    /* Logo Wall */
+    .logo-wall {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .logo-wall-collection {
+        width: 100%;
+    }
+
+    .logo-wall-list {
+        display: flex;
+        flex-flow: wrap;
+    }
+
+    /* Desktop: 4 columns, show first 4 */
+    .logo-wall-item {
+        position: relative;
+        width: 25%;
+    }
+
+    /* Hide items beyond first 4 on desktop */
+    .logo-wall-list [data-logo-wall-item]:nth-child(n + 5) {
+        display: none;
+    }
+
+    .logo-wall-logo {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .logo-wall-logo-before {
+        padding-top: 66.66%;
+    }
+
+    .logo-wall-logo-target {
+        align-items: center;
+        display: flex;
+        height: 40%;
+        inset: 0;
+        justify-content: center;
+        margin: auto;
+        position: absolute;
+        width: 66.66%;
+    }
+
+    .logo-wall-logo-img {
+        height: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        width: 100%;
+    }
+
+    /* Mobile: 2 columns, show first 4 */
+    @media (width < 768px) {
+        .logo-wall-item {
+            width: 50%;
+        }
+
+        /* Still show 4 items (2x2 grid) */
+        .logo-wall-list [data-logo-wall-item]:nth-child(n + 5) {
+            display: none;
+        }
+    }
+
+    /* CTA */
+    .cta {
+        color: var(--color-text-muted);
+        font-size: 0.9375rem;
+        margin-top: var(--spacing-xl);
+    }
+
+    .cta a {
+        color: var(--color-primary);
+        font-weight: 500;
+        text-decoration: underline;
+        text-underline-offset: 2px;
+    }
+
+    .cta a:hover {
+        color: var(--color-primary-dark);
+    }
+}
