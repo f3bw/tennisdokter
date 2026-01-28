@@ -22,31 +22,38 @@ export const About = () => {
                     <h2 className={styles.title}>Over Mij</h2>
 
                     <p className={styles.text}>
-                        Hallo! Ik ben [Jouw Naam], tenniscoach met meer dan [X]
-                        jaar ervaring in het begeleiden van spelers op alle
-                        niveaus.
+                        Inmiddels 40 jaar fulltime ervaring met het begeleiden
+                        van spelers t/m niveau 3. Al 33 jaar werkzaam bij
+                        dezelfde tennisvereniging. Van tennisleraar tot opleider
+                        tot nationale ranglijst, in alle leeftijdscategorieën.
+                        Veel leerlingen, zowel jeugd als volwassenen, die al meer
+                        dan 20 seizoenen achter elkaar les hebben. Daarnaast
+                        leerkracht basisonderwijs.
                     </p>
 
                     <p className={styles.text}>
-                        Met mijn achtergrond als [certificeringen/ervaring] help
-                        ik tennissers hun techniek te verbeteren door middel van
-                        persoonlijke video-analyse. Of het nu gaat om je
-                        forehand, backhand, service of voetenwerk - ik bekijk je
-                        video en geef concrete tips die je direct kunt toepassen.
+                        Met mijn achtergrond en ervaring help ik tennissers
+                        zichzelf te verbeteren door middel van persoonlijke
+                        video-analyse. Niet zoals honderden tennisleraren op
+                        YouTube een videoles over hoe toppers het doen, maar
+                        oplossingen op jouw niveau om dingen verder te brengen.
+                        Kijkend naar jouw motorische onderdelen van je slagen,
+                        voetenwerk en meer. Ik bekijk je video en geef concrete
+                        aanwijzingen en oplossingen. Custommade!
                     </p>
 
                     <ul className={styles.highlights}>
                         <li className={styles['highlight-item']}>
                             <span className={styles['highlight-icon']}>✓</span>
-                            [X] jaar tenniservaring
+                            40 jaar tenniservaring
                         </li>
                         <li className={styles['highlight-item']}>
                             <span className={styles['highlight-icon']}>✓</span>
-                            Gecertificeerd tennisleraar
+                            33 jaar bij dezelfde vereniging
                         </li>
                         <li className={styles['highlight-item']}>
                             <span className={styles['highlight-icon']}>✓</span>
-                            Honderden spelers geholpen
+                            Persoonlijke analyse op jouw niveau
                         </li>
                     </ul>
                 </div>

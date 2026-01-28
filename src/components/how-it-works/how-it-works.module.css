@@ -17,7 +17,7 @@
     }
 
     .title {
-        color: var(--color-primary-dark);
+        color: var(--color-gray-dark);
         font-size: clamp(1.75rem, 5vw, 2.5rem);
         font-weight: 700;
         line-height: 1.2;
@@ -67,18 +67,45 @@
         width: 4rem;
     }
 
+    .step[data-color='blue'] .step-icon {
+        background-color: #e6f4fb;
+        color: var(--color-blue);
+    }
+
+    .step[data-color='orange'] .step-icon {
+        background-color: #fef3e6;
+        color: var(--color-orange);
+    }
+
+    .step[data-color='green'] .step-icon {
+        background-color: var(--color-primary-light);
+        color: var(--color-green);
+    }
+
     .step-icon svg {
         height: 2rem;
         width: 2rem;
     }
 
     .step-number {
-        color: var(--color-primary);
+        color: var(--color-content);
         font-size: 0.875rem;
         font-weight: 600;
         letter-spacing: 0.05em;
         margin-bottom: var(--spacing-xs);
         text-transform: uppercase;
+    }
+
+    .step[data-color='blue'] .step-number {
+        color: var(--color-blue);
+    }
+
+    .step[data-color='orange'] .step-number {
+        color: var(--color-orange);
+    }
+
+    .step[data-color='green'] .step-number {
+        color: var(--color-green);
     }
 
     .step-title {

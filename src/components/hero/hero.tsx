@@ -23,8 +23,8 @@ export const Hero = () => {
                     </p>
 
                     <p className={styles.description}>
-                        Stuur een video van je slag, ontvang professionele
-                        analyse en tips terug. Snel, persoonlijk en betaalbaar.
+                        Stuur een video van je slag, met je vraag of probleem,
+                        ontvang professionele analyse en oplossende tips terug.
                     </p>
 
                     <a

@@ -48,25 +48,48 @@
 
 @layer global {
     :root {
-        /* Colors - Tennis inspired */
-        --color-primary: hsl(142deg 71% 35%);
-        --color-primary-dark: hsl(142deg 71% 28%);
-        --color-primary-light: hsl(142deg 71% 95%);
-        --color-secondary: hsl(45deg 93% 47%);
-        --color-secondary-dark: hsl(45deg 93% 40%);
+        /* Brand Colors */
+        --color-blue: #0a9ad7;
+        --color-green: #288739;
+        --color-orange: #f08118;
+        --color-red: #e42421;
 
-        --color-text: hsl(0deg 0% 15%);
-        --color-text-muted: hsl(0deg 0% 45%);
-        --color-text-light: hsl(0deg 0% 100%);
+        /* Primary - Using green as main brand color */
+        --color-primary: var(--color-green);
+        --color-primary-dark: #1e6a2d;
+        --color-primary-light: #e8f5ea;
 
-        --color-bg: hsl(0deg 0% 100%);
-        --color-bg-alt: hsl(142deg 20% 97%);
-        --color-bg-dark: hsl(0deg 0% 10%);
+        /* Accent colors for variety */
+        --color-accent-blue: var(--color-blue);
+        --color-accent-orange: var(--color-orange);
+        --color-accent-red: var(--color-red);
 
-        --color-border: hsl(0deg 0% 88%);
+        /* Neutral palette */
+        --color-white: rgb(255 255 255);
+        --color-black: rgb(0 0 0);
+        --color-gray-dark: rgb(10 10 10);
+        --color-gray-medium: rgb(60 60 60);
+        --color-content: rgb(97 98 99);
+        --color-slate: rgb(210 211 214);
+        --color-slate-light: rgb(235 236 238);
+        --color-cloud: rgb(250 252 254);
 
-        --color-whatsapp: hsl(142deg 70% 49%);
-        --color-whatsapp-dark: hsl(142deg 70% 42%);
+        /* Text colors - using content gray for sophistication */
+        --color-text: var(--color-gray-dark);
+        --color-text-muted: var(--color-content);
+        --color-text-light: var(--color-white);
+
+        /* Background colors */
+        --color-bg: var(--color-white);
+        --color-bg-alt: var(--color-cloud);
+        --color-bg-dark: var(--color-gray-dark);
+
+        /* Border */
+        --color-border: var(--color-slate);
+
+        /* WhatsApp - using brand green */
+        --color-whatsapp: var(--color-green);
+        --color-whatsapp-dark: var(--color-primary-dark);
 
         /* Typography */
         --font-sans: var(--font-geist), system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
@@ -114,19 +137,6 @@
         --spacing-xl-rem: calc(var(--spacing-xl) / var(--size-unit) * 1rem);
         --spacing-2xl-rem: calc(var(--spacing-2xl) / var(--size-unit) * 1rem);
 
-        /* Color palette */
-        --color-white: rgb(255 255 255);
-        --color-black: rgb(0 0 0);
-        --color-gray-dark: rgb(10 10 10);
-        --color-gray-medium: rgb(60 60 60);
-        --color-blue: #0a9ad7;
-        --color-green: #288739;
-        --color-orange: #f08118;
-        --color-red: #e42421;
-        --color-content: rgb(97 98 99);
-        --color-slate: rgb(210 211 214);
-        --color-slate-light: rgb(210 211 214);
-        --color-cloud: rgb(250 252 254);
     }
 
     html {

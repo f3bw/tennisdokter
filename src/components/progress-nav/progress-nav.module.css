@@ -123,7 +123,7 @@
     }
 
     .nav-link[aria-current='page'] {
-        color: var(--color-primary-dark);
+        color: var(--color-green);
     }
 
     .link-text {
@@ -277,7 +277,7 @@
 
     /* Dark overlay */
     .navigation-dark-bg {
-        background-color: #000;
+        background-color: var(--color-black);
         inset: 0;
         opacity: 0;
         pointer-events: auto;

@@ -1,5 +1,7 @@
 'use client'
 
+import Image from 'next/image'
+
 import styles from './whatsapp-button.module.css'
 
 export const WhatsAppButton = () => {
@@ -12,28 +14,14 @@ export const WhatsAppButton = () => {
             aria-label="Contact via WhatsApp"
         >
             <span className={styles['btn-bubble__ball']}>
-                <svg
+                <Image
+                    src="/logos/logo-ball-yellow.svg"
+                    alt=""
+                    width={40}
+                    height={40}
                     className={styles['btn-bubble__ball-svg']}
-                    viewBox="0 0 24 24"
-                    fill="none"
                     aria-hidden="true"
-                >
-                    <circle cx="12" cy="12" r="10" fill="#c8e038" stroke="#8aa626" strokeWidth="1.5" />
-                    <path
-                        d="M6 3.5c2.5 2 4 5 4 8.5s-1.5 6.5-4 8.5"
-                        fill="none"
-                        stroke="#fff"
-                        strokeWidth="1.8"
-                        strokeLinecap="round"
-                    />
-                    <path
-                        d="M18 3.5c-2.5 2-4 5-4 8.5s1.5 6.5 4 8.5"
-                        fill="none"
-                        stroke="#fff"
-                        strokeWidth="1.8"
-                        strokeLinecap="round"
-                    />
-                </svg>
+                />
             </span>
             <span className={styles['btn-bubble__content']}>
                 <span className={styles['btn-bubble__text']}>Contact</span>
@@ -41,28 +29,14 @@ export const WhatsAppButton = () => {
             <span
                 className={`${styles['btn-bubble__ball']} ${styles['btn-bubble__ball--duplicate']}`}
             >
-                <svg
+                <Image
+                    src="/logos/logo-ball-yellow.svg"
+                    alt=""
+                    width={40}
+                    height={40}
                     className={styles['btn-bubble__ball-svg']}
-                    viewBox="0 0 24 24"
-                    fill="none"
                     aria-hidden="true"
-                >
-                    <circle cx="12" cy="12" r="10" fill="#c8e038" stroke="#8aa626" strokeWidth="1.5" />
-                    <path
-                        d="M6 3.5c2.5 2 4 5 4 8.5s-1.5 6.5-4 8.5"
-                        fill="none"
-                        stroke="#fff"
-                        strokeWidth="1.8"
-                        strokeLinecap="round"
-                    />
-                    <path
-                        d="M18 3.5c-2.5 2-4 5-4 8.5s1.5 6.5 4 8.5"
-                        fill="none"
-                        stroke="#fff"
-                        strokeWidth="1.8"
-                        strokeLinecap="round"
-                    />
-                </svg>
+                />
             </span>
         </a>
     )

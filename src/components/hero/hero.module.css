@@ -43,7 +43,7 @@
     }
 
     .logo-title {
-        color: var(--color-primary-dark);
+        color: var(--color-gray-dark);
         font-family: var(--font-display);
         font-size: clamp(2rem, 8vw, 3rem);
         letter-spacing: -0.02em;
@@ -130,7 +130,7 @@
     }
 
     .price-amount {
-        color: var(--color-primary-dark);
+        color: var(--color-orange);
         font-size: 1.5rem;
         font-weight: 700;
     }

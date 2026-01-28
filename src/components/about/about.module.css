@@ -58,7 +58,7 @@
     }
 
     .title {
-        color: var(--color-primary-dark);
+        color: var(--color-gray-dark);
         font-size: clamp(1.75rem, 5vw, 2.5rem);
         font-weight: 700;
         line-height: 1.2;
@@ -87,7 +87,7 @@
     }
 
     .highlight-icon {
-        color: var(--color-primary);
+        color: var(--color-blue);
         font-weight: 700;
     }
 }

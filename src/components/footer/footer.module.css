@@ -35,7 +35,7 @@
 
     .link {
         border-radius: var(--radius-sm);
-        color: rgb(255 255 255 / 70%);
+        color: var(--color-slate);
         font-size: 0.9375rem;
         padding: 0.5em 0.75em;
         position: relative;
@@ -71,7 +71,7 @@
     .contact-link {
         align-items: center;
         border-radius: var(--radius-sm);
-        color: rgb(255 255 255 / 70%);
+        color: var(--color-slate);
         display: flex;
         font-size: 0.9375rem;
         padding: 0.5em 0.75em;
@@ -109,8 +109,8 @@
     }
 
     .copyright {
-        border-top: 1px solid rgb(255 255 255 / 10%);
-        color: rgb(255 255 255 / 50%);
+        border-top: 1px solid var(--color-gray-medium);
+        color: var(--color-content);
         font-size: 0.875rem;
         padding-top: var(--spacing-xl);
         text-align: center;
