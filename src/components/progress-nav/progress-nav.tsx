@@ -34,8 +34,15 @@ export const ProgressNav = () => {
     const handleNavClick = useCallback(
         (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
             e.preventDefault()
-            scrollToSection(id)
+            // Close menu first (this will restart Lenis in the effect)
             setNavStatus('not-active')
+            // Restart Lenis immediately so scroll works
+            const lenis = getLenis()
+            if (lenis) {
+                lenis.start()
+            }
+            // Now scroll to section
+            scrollToSection(id)
         },
         [scrollToSection]
     )

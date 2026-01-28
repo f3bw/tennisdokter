@@ -67,19 +67,11 @@
         width: 4rem;
     }
 
-    .step[data-color='blue'] .step-icon {
-        background-color: #e6f4fb;
-        color: var(--color-blue);
-    }
-
-    .step[data-color='orange'] .step-icon {
-        background-color: #fef3e6;
-        color: var(--color-orange);
-    }
-
+    .step[data-color='blue'] .step-icon,
+    .step[data-color='orange'] .step-icon,
     .step[data-color='green'] .step-icon {
         background-color: var(--color-primary-light);
-        color: var(--color-green);
+        color: var(--color-primary);
     }
 
     .step-icon svg {
@@ -96,16 +88,10 @@
         text-transform: uppercase;
     }
 
-    .step[data-color='blue'] .step-number {
-        color: var(--color-blue);
-    }
-
-    .step[data-color='orange'] .step-number {
-        color: var(--color-orange);
-    }
-
+    .step[data-color='blue'] .step-number,
+    .step[data-color='orange'] .step-number,
     .step[data-color='green'] .step-number {
-        color: var(--color-green);
+        color: var(--color-primary);
     }
 
     .step-title {
@@ -128,18 +114,36 @@
 
     .cta-button {
         background-color: var(--color-primary);
-        border-radius: var(--radius-full);
+        border-radius: var(--radius-md);
         box-shadow: var(--shadow-md);
         color: var(--color-text-light);
         display: inline-block;
         font-size: 1.0625rem;
         font-weight: 600;
         padding: var(--spacing-md) var(--spacing-xl);
+        position: relative;
         transition: all 0.2s ease;
     }
 
+    .cta-button-inner {
+        color: white;
+        position: relative;
+        z-index: 1;
+    }
+
+    .cta-button-bg {
+        border-radius: inherit;
+        inset: 0;
+        position: absolute;
+        z-index: 0;
+    }
+
+    .cta-button :global(.cursor-bg) {
+        background-color: var(--color-whatsapp);
+        opacity: 0.1;
+    }
+
     .cta-button:hover {
-        background-color: var(--color-primary-dark);
         box-shadow: var(--shadow-lg);
         transform: translateY(-2px);
     }

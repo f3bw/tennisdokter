@@ -19,7 +19,7 @@
 
 /* Global class for cursor-bg so it can be styled from other components */
 :global(.cursor-bg) {
-    background-color: var(--color-text-light);
+    background-color: var(--color-primary);
     border-radius: inherit;
     height: 100%;
     width: 100%;

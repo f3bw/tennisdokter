@@ -14,8 +14,8 @@
     .content {
         background: linear-gradient(
             135deg,
-            var(--color-primary-dark) 0%,
-            var(--color-primary) 100%
+            #0879a8 0%,
+            var(--color-accent-blue) 100%
         );
         border-radius: var(--radius-lg);
         color: var(--color-text-light);
@@ -104,7 +104,7 @@
 
     .cta {
         background-color: var(--color-text-light);
-        border-radius: var(--radius-full);
+        border-radius: var(--radius-md);
         color: var(--color-primary-dark);
         display: inline-block;
         font-size: 1rem;
@@ -116,6 +116,7 @@
     }
 
     .cta-inner {
+        color: var(--color-primary-dark);
         position: relative;
         z-index: 1;
     }
@@ -128,8 +129,8 @@
     }
 
     .cta :global(.cursor-bg) {
-        background-color: rgb(255 255 255 / 80%);
-        opacity: 1;
+        background-color: var(--color-accent-blue);
+        opacity: 0.15;
     }
 
     .cta:hover {

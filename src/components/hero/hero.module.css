@@ -72,8 +72,8 @@
     .cta {
         align-items: center;
         align-self: flex-start;
-        background-color: var(--color-whatsapp);
-        border-radius: var(--radius-full);
+        background-color: var(--color-primary);
+        border-radius: var(--radius-md);
         box-shadow: var(--shadow-md);
         color: var(--color-text-light);
         display: inline-flex;
@@ -89,6 +89,7 @@
         align-items: center;
         display: flex;
         gap: var(--spacing-sm);
+        color: white;
         position: relative;
         z-index: 1;
     }
@@ -101,8 +102,8 @@
     }
 
     .cta :global(.cursor-bg) {
-        background-color: var(--color-whatsapp-dark);
-        opacity: 1;
+        background-color: var(--color-whatsapp);
+        opacity: 0.1;
     }
 
     .cta:hover {
@@ -113,13 +114,8 @@
     .cta:focus-visible {
         box-shadow:
             0 0 0 2px var(--color-bg),
-            0 0 0 4px var(--color-whatsapp);
+            0 0 0 4px var(--color-primary);
         outline: none;
-    }
-
-    .cta-icon {
-        height: 1.5rem;
-        width: 1.5rem;
     }
 
     .price {
@@ -130,7 +126,7 @@
     }
 
     .price-amount {
-        color: var(--color-orange);
+        color: var(--color-primary);
         font-size: 1.5rem;
         font-weight: 700;
     }
@@ -188,11 +184,11 @@
     .decoration {
         background: radial-gradient(
             circle at 80% 20%,
-            var(--color-secondary) 0%,
+            var(--color-primary-light) 0%,
             transparent 50%
         );
         inset: 0;
-        opacity: 0.1;
+        opacity: 0.5;
         pointer-events: none;
         position: absolute;
     }

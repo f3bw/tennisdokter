@@ -2,6 +2,22 @@
     .about {
         background-color: var(--color-bg);
         padding-block: var(--spacing-2xl);
+        position: relative;
+    }
+
+    .about::before {
+        background: linear-gradient(
+            180deg,
+            var(--color-primary-light) 0%,
+            transparent 100%
+        );
+        content: '';
+        height: 200px;
+        left: 0;
+        pointer-events: none;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
 
     .container {
@@ -11,7 +27,9 @@
         margin-inline: auto;
         max-width: var(--container-max);
         padding-inline: var(--container-padding);
+        position: relative;
         width: 100%;
+        z-index: 1;
     }
 
     @media (width >= 768px) {
@@ -87,7 +105,7 @@
     }
 
     .highlight-icon {
-        color: var(--color-blue);
+        color: var(--color-primary);
         font-weight: 700;
     }
 }

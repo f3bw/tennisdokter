@@ -75,8 +75,15 @@ export const HowItWorks = () => {
                         className={styles['cta-button']}
                         target="_blank"
                         rel="noopener noreferrer"
+                        data-magnetic-cursor-target
                     >
-                        Start nu via WhatsApp
+                        <span className={styles['cta-button-inner']}>
+                            Start nu via WhatsApp
+                        </span>
+                        <span
+                            className={styles['cta-button-bg']}
+                            data-magnetic-cursor-bg
+                        />
                     </a>
                 </div>
             </div>

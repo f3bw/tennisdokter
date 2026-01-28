@@ -6,90 +6,156 @@ export const Pricing = () => {
             <div className={styles.container}>
                 <div className={styles.header}>
                     <h2 className={styles.title}>Tarieven</h2>
-                    <p className={styles.subtitle}>
-                        Transparant en betaalbaar
-                    </p>
+                    <p className={styles.subtitle}>Transparant en betaalbaar</p>
                 </div>
 
-                <div className={styles.card}>
-                    <div className={styles['card-header']}>
-                        <h3 className={styles['card-title']}>Video-analyse</h3>
-                        <div className={styles['card-price']}>
-                            <span className={styles['price-amount']}>€10</span>
-                            <span className={styles['price-period']}>
-                                per analyse
-                            </span>
-                        </div>
+                <div className={styles['card-wrapper']}>
+                    <div className={styles.stamp} aria-hidden="true">
+                        <svg
+                            viewBox="0 0 200 200"
+                            className={styles['stamp-svg']}
+                        >
+                            <circle cx="100" cy="100" r="98" fill="#f08118" />
+                            <circle
+                                cx="100"
+                                cy="100"
+                                r="90"
+                                fill="none"
+                                stroke="#0a0a0a"
+                                strokeWidth="4"
+                            />
+                            <circle
+                                cx="100"
+                                cy="100"
+                                r="78"
+                                fill="none"
+                                stroke="#0a0a0a"
+                                strokeWidth="1.5"
+                            />
+                            <image
+                                href="/logos/logo-transparant.svg"
+                                x="68"
+                                y="68"
+                                width="64"
+                                height="64"
+                            />
+                            <defs>
+                                <path
+                                    id="stamp-curve-top"
+                                    d="M 18,100 a 82,82 0 0,1 164,0"
+                                />
+                                <path
+                                    id="stamp-curve-bottom"
+                                    d="M 182,100 a 82,82 0 0,1 -164,0"
+                                />
+                            </defs>
+                            <text className={styles['stamp-text']}>
+                                <textPath
+                                    href="#stamp-curve-top"
+                                    startOffset="50%"
+                                    textAnchor="middle"
+                                >
+                                    ADVIES OP MAAT
+                                </textPath>
+                            </text>
+                            <text className={styles['stamp-text']}>
+                                <textPath
+                                    href="#stamp-curve-bottom"
+                                    startOffset="50%"
+                                    textAnchor="middle"
+                                >
+                                    VIDEO-ANALYSE
+                                </textPath>
+                            </text>
+                        </svg>
                     </div>
 
-                    <ul className={styles['card-features']}>
-                        <li className={styles['card-feature']}>
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="currentColor"
-                                aria-hidden="true"
-                            >
-                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
-                            </svg>
-                            Persoonlijke video-analyse
-                        </li>
-                        <li className={styles['card-feature']}>
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="currentColor"
-                                aria-hidden="true"
-                            >
-                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
-                            </svg>
-                            Concrete tips & oefeningen
-                        </li>
-                        <li className={styles['card-feature']}>
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="currentColor"
-                                aria-hidden="true"
-                            >
-                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
-                            </svg>
-                            Video-uitleg retour
-                        </li>
-                        <li className={styles['card-feature']}>
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="currentColor"
-                                aria-hidden="true"
-                            >
-                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
-                            </svg>
-                            Betaling via Tikkie
-                        </li>
-                        <li className={styles['card-feature']}>
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="currentColor"
-                                aria-hidden="true"
-                            >
-                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
-                            </svg>
-                            Geen abonnement nodig
-                        </li>
-                    </ul>
+                    <div className={styles.card}>
+                        <div className={styles['card-header']}>
+                            <h3 className={styles['card-title']}>
+                                Video-analyse
+                            </h3>
+                            <div className={styles['card-price']}>
+                                <span className={styles['price-amount']}>
+                                    €10
+                                </span>
+                                <span className={styles['price-period']}>
+                                    per analyse
+                                </span>
+                            </div>
+                        </div>
 
-                    <a
-                        href="https://wa.me/31612345678?text=Hoi,%20ik%20wil%20graag%20een%20video-analyse!"
-                        className={styles['card-cta']}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        data-magnetic-cursor-target
-                    >
-                        <span className={styles['card-cta-inner']}>
-                            Start via WhatsApp
-                        </span>
-                        <span
-                            className={styles['card-cta-bg']}
-                            data-magnetic-cursor-bg
-                        />
-                    </a>
+                        <ul className={styles['card-features']}>
+                            <li className={styles['card-feature']}>
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                    aria-hidden="true"
+                                >
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                                </svg>
+                                Persoonlijke video-analyse
+                            </li>
+                            <li className={styles['card-feature']}>
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                    aria-hidden="true"
+                                >
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                                </svg>
+                                Concrete tips & oefeningen
+                            </li>
+                            <li className={styles['card-feature']}>
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                    aria-hidden="true"
+                                >
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                                </svg>
+                                Video-uitleg retour
+                            </li>
+                            <li className={styles['card-feature']}>
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                    aria-hidden="true"
+                                >
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                                </svg>
+                                Betaling via Tikkie
+                            </li>
+                            <li className={styles['card-feature']}>
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                    aria-hidden="true"
+                                >
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                                </svg>
+                                Geen abonnement nodig
+                            </li>
+                        </ul>
+
+                        <div className={styles['card-cta-wrapper']}>
+                            <a
+                                href="https://wa.me/31612345678?text=Hoi,%20ik%20wil%20graag%20een%20video-analyse!"
+                                className={styles['card-cta']}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                data-magnetic-cursor-target
+                            >
+                                <span className={styles['card-cta-inner']}>
+                                    Start via WhatsApp
+                                </span>
+                                <span
+                                    className={styles['card-cta-bg']}
+                                    data-magnetic-cursor-bg
+                                />
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
                 <p className={styles.note}>
