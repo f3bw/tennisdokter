@@ -111,47 +111,4 @@
         margin-top: var(--spacing-xl);
         text-align: center;
     }
-
-    .cta-button {
-        background-color: var(--color-primary);
-        border-radius: var(--radius-md);
-        box-shadow: var(--shadow-md);
-        color: var(--color-text-light);
-        display: inline-block;
-        font-size: 1.0625rem;
-        font-weight: 600;
-        padding: var(--spacing-md) var(--spacing-xl);
-        position: relative;
-        transition: all 0.2s ease;
-    }
-
-    .cta-button-inner {
-        color: white;
-        position: relative;
-        z-index: 1;
-    }
-
-    .cta-button-bg {
-        border-radius: inherit;
-        inset: 0;
-        position: absolute;
-        z-index: 0;
-    }
-
-    .cta-button :global(.cursor-bg) {
-        background-color: var(--color-whatsapp);
-        opacity: 0.1;
-    }
-
-    .cta-button:hover {
-        box-shadow: var(--shadow-lg);
-        transform: translateY(-2px);
-    }
-
-    .cta-button:focus-visible {
-        box-shadow:
-            0 0 0 2px var(--color-bg),
-            0 0 0 4px var(--color-primary);
-        outline: none;
-    }
 }

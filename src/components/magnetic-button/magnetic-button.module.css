@@ -1,0 +1,84 @@
+@layer components {
+    .button {
+        align-items: center;
+        border-radius: var(--radius-md);
+        box-shadow: var(--shadow-md);
+        cursor: pointer;
+        display: inline-flex;
+        font-size: 1.125rem;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+        text-decoration: none;
+        transition: box-shadow 0.2s ease, transform 0.2s ease;
+    }
+
+    .button:hover {
+        box-shadow: var(--shadow-lg);
+    }
+
+    .button:focus-visible {
+        box-shadow:
+            0 0 0 2px var(--color-bg),
+            0 0 0 4px var(--color-primary);
+        outline: none;
+    }
+
+    .fill {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+    .content {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        padding: var(--spacing-md) var(--spacing-xl);
+        position: relative;
+        width: 100%;
+    }
+
+    .text {
+        position: relative;
+    }
+
+    .text-main {
+        display: block;
+        font-weight: 600;
+        line-height: 1.5;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    /* Primary variant (default) */
+    .primary .fill {
+        background-color: var(--color-primary);
+        transition: background-color 0.3s ease;
+    }
+
+    .primary:hover .fill {
+        background-color: #227030;
+    }
+
+    .primary .text-main {
+        color: var(--color-text-light);
+    }
+
+    /* Light variant */
+    .light .fill {
+        background-color: var(--color-text-light);
+        transition: background-color 0.3s ease;
+    }
+
+    .light:hover .fill {
+        background-color: #e8e8e8;
+    }
+
+    .light .text-main {
+        color: var(--color-accent-blue);
+    }
+}

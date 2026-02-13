@@ -353,7 +353,7 @@
     .hamburger-nav-ul {
         display: flex;
         flex-flow: column;
-        gap: 0.375em;
+        gap: 0.125em;
         list-style: none;
         margin: 0;
         padding: 0;
@@ -385,6 +385,7 @@
         margin-bottom: 0;
         padding-right: 1.25em;
         white-space: nowrap;
+        margin-block-start: var(--spacing-xs);
     }
 
     /* Dot indicator */

@@ -23,12 +23,11 @@ export const About = () => {
 
                     <p className={styles.text}>
                         Inmiddels 40 jaar fulltime ervaring met het begeleiden
-                        van spelers t/m niveau 3. Al 33 jaar werkzaam bij
+                        van spelers t/m niveau 3. Al 34 jaar werkzaam bij
                         dezelfde tennisvereniging. Van tennisleraar tot opleider
                         tot nationale ranglijst, in alle leeftijdscategorieën.
-                        Veel leerlingen, zowel jeugd als volwassenen, die al meer
-                        dan 20 seizoenen achter elkaar les hebben. Daarnaast
-                        leerkracht basisonderwijs.
+                        Veel leerlingen, zowel jeugd als volwassenen, die al
+                        meer dan 20 seizoenen achter elkaar les hebben.
                     </p>
 
                     <p className={styles.text}>
@@ -49,8 +48,15 @@ export const About = () => {
                         </li>
                         <li className={styles['highlight-item']}>
                             <span className={styles['highlight-icon']}>✓</span>
-                            33 jaar bij dezelfde vereniging
+                            34 jaar bij dezelfde middelgrote vereniging (1200
+                            leden)
                         </li>
+
+                        <li className={styles['highlight-item']}>
+                            <span className={styles['highlight-icon']}>✓</span>
+                            Bezit acte PABO (leerkracht basisonderwijs)
+                        </li>
+
                         <li className={styles['highlight-item']}>
                             <span className={styles['highlight-icon']}>✓</span>
                             Persoonlijke analyse op jouw niveau

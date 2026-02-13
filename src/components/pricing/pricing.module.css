@@ -36,16 +36,23 @@
 
     /* Circular stamp badge */
     .stamp {
-        height: 110px;
         position: absolute;
-        right: -16px;
-        top: -24px;
-        transform: rotate(12deg);
-        width: 110px;
+        right: 0;
+        top: 0;
+        transform: translate(25%, -50%) rotate(12deg);
+        width: 6em;
         z-index: 2;
     }
 
+    @media (width >= 768px) {
+        .stamp {
+            transform: translate(50%, -50%) rotate(12deg);
+            width: 8em;
+        }
+    }
+
     .stamp-svg {
+        display: block;
         filter: drop-shadow(0 2px 8px rgb(0 0 0 / 15%));
         height: 100%;
         width: 100%;
@@ -53,9 +60,9 @@
 
     .stamp-text {
         fill: var(--color-gray-dark);
-        font-size: 17px;
+        font-size: 14px;
         font-weight: 700;
-        letter-spacing: 0.06em;
+        letter-spacing: 0.1em;
     }
 
     .card {
@@ -125,47 +132,7 @@
     }
 
     .card-cta {
-        background-color: var(--color-primary);
-        border-radius: var(--radius-md);
-        box-shadow: var(--shadow-md);
-        color: var(--color-text-light);
-        display: block;
-        font-size: 1.0625rem;
-        font-weight: 600;
-        padding: var(--spacing-md) var(--spacing-xl);
-        position: relative;
-        text-align: center;
-        transition: all 0.2s ease;
-    }
-
-    .card-cta-inner {
-        color: white;
-        position: relative;
-        z-index: 1;
-    }
-
-    .card-cta-bg {
-        border-radius: inherit;
-        inset: 0;
-        position: absolute;
-        z-index: 0;
-    }
-
-    .card-cta :global(.cursor-bg) {
-        background-color: var(--color-whatsapp);
-        opacity: 0.1;
-    }
-
-    .card-cta:hover {
-        box-shadow: var(--shadow-lg);
-        transform: translateY(-2px);
-    }
-
-    .card-cta:focus-visible {
-        box-shadow:
-            0 0 0 2px var(--color-bg),
-            0 0 0 4px var(--color-primary);
-        outline: none;
+        width: 100%;
     }
 
     .note {

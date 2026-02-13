@@ -1,3 +1,5 @@
+import { MagneticButton } from '@/components/magnetic-button'
+
 import styles from './trainers.module.css'
 
 export const Trainers = () => {
@@ -82,18 +84,14 @@ export const Trainers = () => {
                         </div>
                     </div>
 
-                    <a
+                    <MagneticButton
                         href="https://wa.me/31612345678?text=Hoi,%20ik%20ben%20tennisleraar%20en%20heb%20een%20vraag."
-                        className={styles.cta}
                         target="_blank"
                         rel="noopener noreferrer"
-                        data-magnetic-cursor-target
+                        variant="light"
                     >
-                        <span className={styles['cta-inner']}>
-                            Neem contact op
-                        </span>
-                        <span className={styles['cta-bg']} data-magnetic-cursor-bg />
-                    </a>
+                        Neem contact op
+                    </MagneticButton>
                 </div>
             </div>
         </section>

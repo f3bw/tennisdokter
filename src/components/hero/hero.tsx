@@ -2,6 +2,8 @@
 
 import dynamic from 'next/dynamic'
 
+import { MagneticButton } from '@/components/magnetic-button'
+
 import styles from './hero.module.css'
 
 const FallingBalls = dynamic(
@@ -15,7 +17,7 @@ export const Hero = () => {
             <div className={styles.wrapper}>
                 <div className={styles.content}>
                     <h1 className={styles['logo-title']}>
-                        de<span className="bold">tennisdokter</span>
+                        de<span className={styles.bold}>tennisdokter</span>
                     </h1>
 
                     <p className={styles.tagline}>
@@ -27,21 +29,13 @@ export const Hero = () => {
                         ontvang professionele analyse en oplossende tips terug.
                     </p>
 
-                    <a
+                    <MagneticButton
                         href="https://wa.me/31612345678?text=Hoi,%20ik%20wil%20graag%20een%20video-analyse!"
-                        className={styles.cta}
                         target="_blank"
                         rel="noopener noreferrer"
-                        data-magnetic-cursor-target
                     >
-                        <span className={styles['cta-inner']}>
-                            Start via WhatsApp
-                        </span>
-                        <span
-                            className={styles['cta-bg']}
-                            data-magnetic-cursor-bg
-                        />
-                    </a>
+                        Start via WhatsApp
+                    </MagneticButton>
 
                     <p className={styles.price}>
                         <span className={styles['price-amount']}>€10</span>

@@ -1,3 +1,5 @@
+import { MagneticButton } from '@/components/magnetic-button'
+
 import styles from './how-it-works.module.css'
 
 const steps = [
@@ -70,21 +72,13 @@ export const HowItWorks = () => {
                 </div>
 
                 <div className={styles.cta}>
-                    <a
+                    <MagneticButton
                         href="https://wa.me/31612345678?text=Hoi,%20ik%20wil%20graag%20een%20video-analyse!"
-                        className={styles['cta-button']}
                         target="_blank"
                         rel="noopener noreferrer"
-                        data-magnetic-cursor-target
                     >
-                        <span className={styles['cta-button-inner']}>
-                            Start nu via WhatsApp
-                        </span>
-                        <span
-                            className={styles['cta-button-bg']}
-                            data-magnetic-cursor-bg
-                        />
-                    </a>
+                        Start nu via WhatsApp
+                    </MagneticButton>
                 </div>
             </div>
         </section>

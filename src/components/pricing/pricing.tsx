@@ -1,3 +1,5 @@
+import { MagneticButton } from '@/components/magnetic-button'
+
 import styles from './pricing.module.css'
 
 export const Pricing = () => {
@@ -22,12 +24,12 @@ export const Pricing = () => {
                                 r="90"
                                 fill="none"
                                 stroke="#0a0a0a"
-                                strokeWidth="4"
+                                strokeWidth="0"
                             />
                             <circle
                                 cx="100"
                                 cy="100"
-                                r="78"
+                                r="72"
                                 fill="none"
                                 stroke="#0a0a0a"
                                 strokeWidth="1.5"
@@ -42,14 +44,17 @@ export const Pricing = () => {
                             <defs>
                                 <path
                                     id="stamp-curve-top"
-                                    d="M 18,100 a 82,82 0 0,1 164,0"
+                                    d="M 16,100 a 84,84 0 0,1 168,0"
                                 />
                                 <path
                                     id="stamp-curve-bottom"
-                                    d="M 182,100 a 82,82 0 0,1 -164,0"
+                                    d="M 184,100 a 84,84 0 0,1 -168,0"
                                 />
                             </defs>
-                            <text className={styles['stamp-text']}>
+                            <text
+                                className={styles['stamp-text']}
+                                dominantBaseline="middle"
+                            >
                                 <textPath
                                     href="#stamp-curve-top"
                                     startOffset="50%"
@@ -58,7 +63,10 @@ export const Pricing = () => {
                                     ADVIES OP MAAT
                                 </textPath>
                             </text>
-                            <text className={styles['stamp-text']}>
+                            <text
+                                className={styles['stamp-text']}
+                                dominantBaseline="middle"
+                            >
                                 <textPath
                                     href="#stamp-curve-bottom"
                                     startOffset="50%"
@@ -139,21 +147,14 @@ export const Pricing = () => {
                         </ul>
 
                         <div className={styles['card-cta-wrapper']}>
-                            <a
+                            <MagneticButton
                                 href="https://wa.me/31612345678?text=Hoi,%20ik%20wil%20graag%20een%20video-analyse!"
-                                className={styles['card-cta']}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                data-magnetic-cursor-target
+                                className={styles['card-cta']}
                             >
-                                <span className={styles['card-cta-inner']}>
-                                    Start via WhatsApp
-                                </span>
-                                <span
-                                    className={styles['card-cta-bg']}
-                                    data-magnetic-cursor-bg
-                                />
-                            </a>
+                                Start via WhatsApp
+                            </MagneticButton>
                         </div>
                     </div>
                 </div>

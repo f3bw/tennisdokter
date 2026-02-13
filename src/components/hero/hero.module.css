@@ -5,9 +5,14 @@
             var(--color-primary-light) 0%,
             var(--color-bg) 50%
         );
-        min-height: 100dvh;
         overflow: hidden;
         position: relative;
+    }
+
+    @media (width >= 768px) {
+        .hero {
+            min-height: 100dvh;
+        }
     }
 
     .wrapper {
@@ -15,7 +20,6 @@
         grid-template-columns: 1fr;
         margin-inline: auto;
         max-width: var(--container-max);
-        min-height: 100dvh;
         padding-inline: var(--container-padding);
         position: relative;
         z-index: 1;
@@ -26,6 +30,7 @@
             align-items: center;
             grid-template-columns: 1fr 1fr;
             gap: var(--spacing-xl);
+            min-height: 100dvh;
         }
     }
 
@@ -52,7 +57,7 @@
     }
 
     .bold {
-        font-weight: 700;
+        font-weight: 700 !important;
     }
 
     .tagline {
@@ -69,56 +74,9 @@
         max-width: 480px;
     }
 
-    .cta {
-        align-items: center;
-        align-self: flex-start;
-        background-color: var(--color-primary);
-        border-radius: var(--radius-md);
-        box-shadow: var(--shadow-md);
-        color: var(--color-text-light);
-        display: inline-flex;
-        font-size: 1.125rem;
-        font-weight: 600;
-        margin-top: var(--spacing-md);
-        padding: var(--spacing-md) var(--spacing-xl);
-        position: relative;
-        transition: all 0.2s ease;
-    }
-
-    .cta-inner {
-        align-items: center;
-        display: flex;
-        gap: var(--spacing-sm);
-        color: white;
-        position: relative;
-        z-index: 1;
-    }
-
-    .cta-bg {
-        border-radius: inherit;
-        inset: 0;
-        position: absolute;
-        z-index: 0;
-    }
-
-    .cta :global(.cursor-bg) {
-        background-color: var(--color-whatsapp);
-        opacity: 0.1;
-    }
-
-    .cta:hover {
-        box-shadow: var(--shadow-lg);
-        transform: translateY(-2px);
-    }
-
-    .cta:focus-visible {
-        box-shadow:
-            0 0 0 2px var(--color-bg),
-            0 0 0 4px var(--color-primary);
-        outline: none;
-    }
-
     .price {
+        margin-top: var(--spacing-lg);
+
         align-items: baseline;
         display: flex;
         gap: var(--spacing-sm);
