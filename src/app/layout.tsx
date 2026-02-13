@@ -23,6 +23,10 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
+    robots: {
+        index: false,
+        follow: false,
+    },
     title: 'De Tennisdokter | Persoonlijk Videoadvies voor Tennis',
     description:
         'Verbeter je tennis met persoonlijk videoadvies. Stuur je video via WhatsApp en ontvang professionele analyse met concrete tips. €10 per analyse.',
