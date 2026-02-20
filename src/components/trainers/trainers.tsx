@@ -9,17 +9,16 @@ export const Trainers = () => {
                 <div className={styles.content}>
                     <span className={styles.badge}>Voor Trainers</span>
                     <h2 className={styles.title}>
-                        Vragen over methodiek of werkwijze?
+                        Ben je tennistrainer en heb je vragen?
                     </h2>
                     <p className={styles.text}>
-                        Ben je tennisleraar of trainer en heb je vragen over
-                        trainingsmethodes, methodiek of hoe je bepaalde
-                        technieken het beste kunt overbrengen aan je leerlingen?
+                        Slagspecifiek, methodiek, didaktiek, organisatorisch,
+                        neem gerust contact met me op.
                     </p>
                     <p className={styles.text}>
-                        Neem gerust contact met me op. Ik deel graag mijn kennis
-                        en ervaring met collega-trainers. Op dit moment is dit
-                        volledig gratis - ik help je graag verder!
+                        Ik deel graag mijn kennis en ervaring met
+                        collega-trainers. We kunnen veel van elkaar opsteken.
+                        Kostenloos
                     </p>
 
                     <div className={styles.features}>
