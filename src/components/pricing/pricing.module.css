@@ -1,7 +1,7 @@
 @layer components {
     .section {
         background-color: var(--color-bg-alt);
-        padding-block: var(--spacing-2xl);
+        padding-block: var(--spacing-xl);
     }
 
     .container {
@@ -13,7 +13,7 @@
     }
 
     .header {
-        margin-bottom: var(--spacing-xl);
+        margin-bottom: var(--spacing-md);
     }
 
     .title {
@@ -75,7 +75,7 @@
 
     .card-header {
         background-color: var(--color-primary-light);
-        padding: var(--spacing-xl);
+        padding: var(--spacing-md);
     }
 
     .card-title {
@@ -94,7 +94,7 @@
 
     .price-amount {
         color: var(--color-primary);
-        font-size: 3rem;
+        font-size: 2.25rem;
         font-weight: 700;
         line-height: 1;
     }
@@ -107,9 +107,9 @@
     .card-features {
         display: flex;
         flex-direction: column;
-        gap: var(--spacing-md);
+        gap: var(--spacing-sm);
         list-style: none;
-        padding: var(--spacing-xl);
+        padding: var(--spacing-md);
     }
 
     .card-feature {
@@ -128,7 +128,7 @@
     }
 
     .card-cta-wrapper {
-        padding: 0 var(--spacing-xl) var(--spacing-xl);
+        padding: 0 var(--spacing-md) var(--spacing-md);
     }
 
     .card-cta {
@@ -138,6 +138,6 @@
     .note {
         color: var(--color-text-muted);
         font-size: 0.9375rem;
-        margin-top: var(--spacing-xl);
+        margin-top: var(--spacing-md);
     }
 }

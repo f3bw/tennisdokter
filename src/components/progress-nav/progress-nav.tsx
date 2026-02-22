@@ -14,6 +14,7 @@ const NAV_SECTIONS: NavSection[] = [
     { id: 'over-mij', label: 'Over' },
     { id: 'hoe-werkt-het', label: 'Werkwijze' },
     { id: 'voor-trainers', label: 'Trainers' },
+    { id: 'ervaringen', label: 'Ervaringen' },
     { id: 'tarieven', label: 'Tarieven' },
     { id: 'partners', label: 'Partners' },
 ]
