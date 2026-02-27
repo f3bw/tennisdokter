@@ -51,10 +51,10 @@ export const About = () => {
                             <span className={styles['highlight-icon']}>✓</span>
                             34 jaar bij dezelfde middelgrote vereniging
                             <Image
-                                src="/favicon.svg"
-                                alt="Tennisdokter"
-                                width={20}
-                                height={20}
+                                src="/brands/TVR Logo.svg"
+                                alt="TVR"
+                                width={120}
+                                height={60}
                                 className={styles['highlight-brand']}
                             />
                         </li>

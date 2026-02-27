@@ -12,14 +12,14 @@ if (typeof window !== 'undefined') {
 }
 
 const logos = [
-    { src: '/logos/logo-1.svg', alt: 'Partner 1' },
-    { src: '/logos/logo-2.svg', alt: 'Partner 2' },
-    { src: '/logos/logo-3.svg', alt: 'Partner 3' },
-    { src: '/logos/logo-4.svg', alt: 'Partner 4' },
-    { src: '/logos/logo-5.svg', alt: 'Partner 5' },
-    { src: '/logos/logo-6.svg', alt: 'Partner 6' },
-    { src: '/logos/logo-7.svg', alt: 'Partner 7' },
-    { src: '/logos/logo-8.svg', alt: 'Partner 8' },
+    { src: '/brands/RacketTuning.svg', alt: 'RacketTuning' },
+    { src: '/brands/TVR Logo.svg', alt: 'TVR' },
+    { src: '/brands/logo.svg', alt: 'Partner' },
+    {
+        src: '/brands/TennisschoolFerdinandWerger.svg',
+        alt: 'Tennisschool Ferdinand Werger',
+    },
+    { src: '/brands/LogoGertrudis.svg', alt: 'Logo Gertrudis' },
 ]
 
 const LOOP_DELAY = 1.5

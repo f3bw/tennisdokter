@@ -11,6 +11,7 @@
     .header {
         margin-bottom: 3rem;
         padding-inline: var(--spacing-md);
+        text-align: center;
     }
 
     .header-inner {
