@@ -21,12 +21,13 @@ export const Hero = () => {
                     </h1>
 
                     <p className={styles.tagline}>
-                        Verbeter je tennis met persoonlijk videoadvies
+                        Verbeter je tennis met een persoonlijk videoadvies
                     </p>
 
                     <p className={styles.description}>
                         Stuur een video van je slag, met je vraag of probleem,
-                        ontvang professionele analyse en oplossende tips terug.
+                        ontvang een professionele analyse met oplossende tips
+                        terug.
                     </p>
 
                     <MagneticButton

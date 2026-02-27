@@ -5,7 +5,7 @@
         box-shadow: var(--shadow-md);
         cursor: pointer;
         display: inline-flex;
-        font-size: 1.125rem;
+        font-size: 1rem;
         justify-content: center;
         overflow: hidden;
         position: relative;
@@ -37,7 +37,7 @@
         display: flex;
         height: 100%;
         justify-content: center;
-        padding: var(--spacing-md) var(--spacing-xl);
+        padding: var(--spacing-sm) var(--spacing-lg);
         position: relative;
         width: 100%;
     }

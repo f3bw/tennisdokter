@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import styles from './about.module.css'
 
 export const About = () => {
@@ -25,31 +27,36 @@ export const About = () => {
                         Inmiddels 40 jaar fulltime ervaring met het begeleiden
                         van spelers t/m niveau 3. Al 34 jaar werkzaam bij
                         dezelfde tennisvereniging. Van tennisleraar tot opleider
-                        tot nationale ranglijst, in alle leeftijdscategorieën.
-                        Veel leerlingen, zowel jeugd als volwassenen, die al
-                        meer dan 20 seizoenen achter elkaar les hebben.
+                        jeugd tot en met nationale ranglijst. Veel leerlingen,
+                        zowel jeugd als volwassenen, die al meer dan 20
+                        seizoenen achter elkaar les hebben.
                     </p>
 
                     <p className={styles.text}>
                         Met mijn achtergrond en ervaring help ik tennissers
                         zichzelf te verbeteren door middel van persoonlijke
-                        video-analyse. Niet zoals honderden tennisleraren op
-                        YouTube een videoles over hoe toppers het doen, maar
-                        oplossingen op jouw niveau om dingen verder te brengen.
-                        Kijkend naar jouw motorische onderdelen van je slagen,
-                        voetenwerk en meer. Ik bekijk je video en geef concrete
-                        aanwijzingen en oplossingen. Custommade!
+                        video-analyse. Niet zoals vele trainers met YouTube
+                        video&apos;s over hoe toppers het doen, maar oplossingen
+                        op jouw niveau om dingen verder te brengen. Ik bekijk je
+                        video en geef concrete aanwijzingen en oplossingen.
+                        Custommade!
                     </p>
 
                     <ul className={styles.highlights}>
                         <li className={styles['highlight-item']}>
                             <span className={styles['highlight-icon']}>✓</span>
-                            40 jaar tenniservaring
+                            40 jaar trainerservaring
                         </li>
                         <li className={styles['highlight-item']}>
                             <span className={styles['highlight-icon']}>✓</span>
-                            34 jaar bij dezelfde middelgrote vereniging (1200
-                            leden)
+                            34 jaar bij dezelfde middelgrote vereniging
+                            <Image
+                                src="/brands/TVR Logo.svg"
+                                alt="TVR"
+                                width={120}
+                                height={60}
+                                className={styles['highlight-brand']}
+                            />
                         </li>
 
                         <li className={styles['highlight-item']}>

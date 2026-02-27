@@ -108,4 +108,12 @@
         color: var(--color-primary);
         font-weight: 700;
     }
+
+    .highlight-brand {
+        flex-shrink: 0;
+        height: 3.5rem;
+        margin-block: -1rem;
+        object-fit: contain;
+        width: auto;
+    }
 }
