@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { DM_Sans, Geist } from 'next/font/google'
 import type { ReactNode } from 'react'
@@ -87,6 +88,7 @@ const RootLayout = ({
                     {children}
                     <IosPwaSplash />
                 </LenisProvider>
+                <Analytics />
             </body>
         </html>
     )
