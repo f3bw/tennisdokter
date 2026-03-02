@@ -142,6 +142,7 @@
     }
 
     html {
+        overflow-x: hidden;
         scroll-padding-top: 80px;
         width: 100%;
     }
