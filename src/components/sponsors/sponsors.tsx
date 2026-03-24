@@ -25,6 +25,15 @@ const logos = [
 const LOOP_DELAY = 1.5
 const DURATION = 0.9
 
+const shuffleArray = <T,>(arr: T[]): T[] => {
+    const a = arr.slice()
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1))
+        ;[a[i], a[j]] = [a[j], a[i]]
+    }
+    return a
+}
+
 export const Sponsors = () => {
     const rootRef = useRef<HTMLDivElement>(null)
     const listRef = useRef<HTMLDivElement>(null)
@@ -50,15 +59,6 @@ export const Sponsors = () => {
 
         const isVisible = (el: HTMLElement) =>
             window.getComputedStyle(el).display !== 'none'
-
-        const shuffleArray = <T,>(arr: T[]): T[] => {
-            const a = arr.slice()
-            for (let i = a.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1))
-                ;[a[i], a[j]] = [a[j], a[i]]
-            }
-            return a
-        }
 
         const setup = () => {
             if (timelineRef.current) {

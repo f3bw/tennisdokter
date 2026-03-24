@@ -41,7 +41,7 @@ export const MagneticCursor = () => {
             yTo(e.clientY)
         }
 
-        window.addEventListener('mousemove', handleMouseMove)
+        window.addEventListener('mousemove', handleMouseMove, { passive: true })
 
         // Setup magnetic targets
         const hoverTargets = document.querySelectorAll(
@@ -76,8 +76,8 @@ export const MagneticCursor = () => {
             enterHandlers.set(target, enterHandler)
             leaveHandlers.set(target, leaveHandler)
 
-            target.addEventListener('mouseenter', enterHandler)
-            target.addEventListener('mouseleave', leaveHandler)
+            target.addEventListener('mouseenter', enterHandler, { passive: true })
+            target.addEventListener('mouseleave', leaveHandler, { passive: true })
         })
 
         return () => {
