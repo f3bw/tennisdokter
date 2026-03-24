@@ -7,29 +7,28 @@ export const About = () => {
         <section id="over-mij" className={styles.about}>
             <div className={styles.container}>
                 <div className={styles.image}>
-                    <div className={styles['image-placeholder']}>
-                        <svg
-                            className={styles['image-icon']}
-                            viewBox="0 0 24 24"
-                            fill="currentColor"
-                            aria-hidden="true"
-                        >
-                            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                        </svg>
-                        <span className={styles['image-text']}>Foto</span>
-                    </div>
+                    <Image
+                        src="/images/headshot-ferdinand-werger.jpeg"
+                        alt="Ferdinand Werger"
+                        width={400}
+                        height={500}
+                        className={styles['image-photo']}
+                    />
                 </div>
 
                 <div className={styles.content}>
-                    <h2 className={styles.title}>Over Mij</h2>
+                    <h2 className={styles.title}>Wie ben ik</h2>
 
                     <p className={styles.text}>
-                        Inmiddels 40 jaar fulltime ervaring met het begeleiden
-                        van spelers t/m niveau 3. Al 34 jaar werkzaam bij
-                        dezelfde tennisvereniging. Van tennisleraar tot opleider
-                        jeugd tot en met nationale ranglijst. Veel leerlingen,
-                        zowel jeugd als volwassenen, die al meer dan 20
-                        seizoenen achter elkaar les hebben.
+                        Ik ben Ferdinand Werger, al 40 jaar full time
+                        tennisleraar met een zeer ruime ervaring in het
+                        begeleiden van spelers t/m niveau 3. Ik werk al 34 jaar
+                        bij Tennis en Padelvereniging Roosendaal (TPR), waar ik
+                        lesgeef aan alle doelgroepen. Van jonge jeugd tot
+                        volwassenen en van recreatieve spelers t/m kinderen op
+                        de nationale ranglijst. Als ervaren trainer werk je vaak
+                        meer dan 20 seizoenen met fanatieke en talentvolle
+                        spelers!!
                     </p>
 
                     <p className={styles.text}>

@@ -44,6 +44,14 @@
         justify-content: center;
     }
 
+    .image-photo {
+        border-radius: var(--radius-lg);
+        height: auto;
+        max-width: 300px;
+        object-fit: cover;
+        width: 100%;
+    }
+
     .image-placeholder {
         align-items: center;
         aspect-ratio: 1;

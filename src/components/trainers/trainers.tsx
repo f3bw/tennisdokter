@@ -84,7 +84,7 @@ export const Trainers = () => {
                     </div>
 
                     <MagneticButton
-                        href="https://wa.me/31612345678?text=Hoi,%20ik%20ben%20tennisleraar%20en%20heb%20een%20vraag."
+                        href="https://wa.me/31629466919?text=Hoi,%20ik%20ben%20tennisleraar%20en%20heb%20een%20vraag."
                         target="_blank"
                         rel="noopener noreferrer"
                         variant="light"

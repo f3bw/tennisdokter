@@ -7,7 +7,7 @@ import styles from './whatsapp-button.module.css'
 export const WhatsAppButton = () => {
     return (
         <a
-            href="https://wa.me/31612345678?text=Hoi,%20ik%20wil%20graag%20een%20video-analyse!"
+            href="https://wa.me/31629466919?text=Hoi,%20ik%20wil%20graag%20een%20video-analyse!"
             className={styles['btn-bubble']}
             target="_blank"
             rel="noopener noreferrer"

@@ -8,44 +8,24 @@ import styles from './testimonials.module.css'
 
 const SLIDES = [
     {
-        name: 'Jan de Boer',
-        role: 'Recreatieve speler',
-        quote: 'Na één analyse had ik direct concrete punten om aan te werken. Mijn forehand is echt een stuk stabieler geworden. Aanrader voor iedereen die serieus wil verbeteren!',
+        name: 'Antione',
+        role: 'Niveau 4',
+        quote: 'Ik train al 20+ jaar bij Ferdinand, en dat is altijd supergoed bevallen. Hij is (minstens) net zo tennisgek als ik, gaat altijd voor de persoonlijke aanpak door te kijken wat bij jouw lichaam/spel past, en heeft heel veel technische kennis. Kortom: een hele fijne trainer met superveel ervaring!',
     },
     {
-        name: 'Marieke van Dam',
-        role: 'Competitiespeler (niveau 4)',
-        quote: 'Ik was sceptisch over een online analyse, maar de feedback was verrassend persoonlijk en to-the-point. Geen algemene tips maar echt gericht op mijn specifieke problemen.',
+        name: 'Marcel',
+        role: 'niveau 6',
+        quote: 'Ik tennis al meer dan 20 jaar bij en met Ferdinand. En toch weet hij iedere keer iets te wijzigen of te  experimenteren om te zien of het resultaat beter is. Al gaat het maar over een racket stand verandering van 1 mm.',
     },
     {
-        name: 'Peter Smits',
-        role: 'Tennisliefhebber',
-        quote: 'Voor €10 krijg je meer dan van een normale les. De video-analyse laat je precies zien wat je doet en waarom het beter kan. Heel duidelijk uitgelegd.',
+        name: 'Joop',
+        role: 'Niveau 8/7',
+        quote: 'Toen mij werd gevraagd iets te schrijven voor De Tennisdokter, ben ik teruggeblikt op het begin van mijn tennisavontuur. Het begon allemaal na mijn pensionering, een periode waarin sport nauwelijks een plek had in mijn leven. Via een kennis die al op een tennisschool zat, kwam ik voor het eerst in aanraking met tennis. Zij was op zoek naar een partner om samen te spelen en wist mij te overtuigen om samen een cursus te volgen bij haar tennisleraar, Ferdinand Werger. We kregen wekelijks samen een half uur les van hem. Kort daarna stopte mijn kennis, maar ik besloot door te gaan. Tennis begon mij steeds meer te bevallen. Ik ging vaker en intensiever spelen, ook met anderen in verschillende clubjes. Ondanks deze nieuwe contacten bleef ik trouw deelnemen aan zijn lessen. Zo ben ik in de afgelopen 15 jaar steeds fanatieker en beter geworden in het tennis, vooral dankzij zijn enthousiaste en zeer deskundige begeleiding. Inmiddels staat Ferdinand op het punt zijn 40-jarig jubileum te vieren. Het is bijzonder dat hij nu als ‘de Tennisdokter’ zijn deskundigheid op deze vernieuwende en toegankelijke wijze met iedereen wil delen – wat een geweldig initiatief! Ik wens jou veel succes en voldoening toe in jouw nieuwe rol als ‘De Tennisdokter’!',
     },
     {
-        name: 'Linda Bakker',
-        role: 'Recreatieve speelster',
-        quote: 'Mijn service was altijd mijn zwakke punt. De tennisdokter heeft me in één analyse laten inzien wat ik anders moest doen. Nu sla ik dubbel zoveel services in.',
-    },
-    {
-        name: 'Tom Visser',
-        role: 'Jeugdspeler (niveau 2)',
-        quote: 'Super waardevolle feedback! Het is fijn dat er gekeken wordt naar jouw niveau en niet naar hoe een prof het doet. Echt maatwerk advies.',
-    },
-    {
-        name: 'Sandra Jansen',
-        role: 'Competitiespeler (niveau 5)',
-        quote: 'Binnen 24 uur reactie met een uitgebreide video-analyse. De tips waren helder en direct toepasbaar. Ik kom zeker terug voor meer analyses!',
-    },
-    {
-        name: 'Rob Vermeer',
-        role: 'Recreatieve speler',
-        quote: 'Eindelijk iemand die kijkt naar hoe ík speel en niet naar hoe het theoretisch moet. De persoonlijke aanpak maakt echt het verschil. Geweldig initiatief!',
-    },
-    {
-        name: 'Emma Hofman',
-        role: 'Competitiespeler (niveau 4)',
-        quote: 'De analyse was zo gedetailleerd dat ik meteen naar de baan wilde om het toe te passen. En het werkt! Mijn backhand is in twee weken enorm vooruitgegaan.',
+        name: 'Yvonne',
+        role: 'Niveau 8',
+        quote: 'Dankzij mijn tennisleraar Ferdinand Werger speel ik op gevorderde leeftijd nog met veel enthousiasme en plezier – en ik word nog steeds fanatieker en beter in het tennisspel! Hij is dé Tennisdokter bij uitstek en van harte aan te raden.',
     },
 ]
 

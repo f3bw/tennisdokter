@@ -73,7 +73,7 @@ export const HowItWorks = () => {
 
                 <div className={styles.cta}>
                     <MagneticButton
-                        href="https://wa.me/31612345678?text=Hoi,%20ik%20wil%20graag%20een%20video-analyse!"
+                        href="https://wa.me/31629466919?text=Hoi,%20ik%20wil%20graag%20een%20video-analyse!"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
