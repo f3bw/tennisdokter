@@ -263,7 +263,7 @@ export const Sponsors = () => {
                 <p className={styles.cta}>
                     Interesse in een partnerschap?{' '}
                     <a
-                        href="https://wa.me/31612345678?text=Hoi,%20ik%20ben%20geïnteresseerd%20in%20een%20partnerschap."
+                        href="https://wa.me/31629466919?text=Hoi,%20ik%20ben%20geïnteresseerd%20in%20een%20partnerschap."
                         target="_blank"
                         rel="noopener noreferrer"
                     >

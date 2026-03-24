@@ -20,7 +20,7 @@ const NAV_SECTIONS: NavSection[] = [
 ]
 
 const WHATSAPP_URL =
-    'https://wa.me/31612345678?text=Hoi,%20ik%20wil%20graag%20een%20video-analyse!'
+    'https://wa.me/31629466919?text=Hoi,%20ik%20wil%20graag%20een%20video-analyse!'
 
 export const ProgressNav = () => {
     const { activeSection, scrollToSection } = useScrollSpy(NAV_SECTIONS)
