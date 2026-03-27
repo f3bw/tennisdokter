@@ -71,6 +71,14 @@
         width: 66.66%;
     }
 
+    .logo-wall-logo-target a {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        width: 100%;
+    }
+
     .logo-wall-logo-img {
         height: 100%;
         max-height: 100%;

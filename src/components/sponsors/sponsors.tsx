@@ -12,14 +12,26 @@ if (typeof window !== 'undefined') {
 }
 
 const logos = [
-    { src: '/brands/RacketTuning.svg', alt: 'RacketTuning' },
-    { src: '/brands/TVR Logo.svg', alt: 'TVR' },
-    { src: '/brands/logo.svg', alt: 'Partner' },
+    {
+        src: '/brands/RacketTuning.svg',
+        alt: 'RacketTuning',
+        href: 'https://rackettuning.nl/',
+    },
+    {
+        src: '/brands/TVR Logo.svg',
+        alt: 'TPR',
+        href: 'https://tproosendaal.nl/',
+    },
+    {
+        src: '/brands/logo.svg',
+        alt: 'Partner',
+        href: 'https://www.fabricewerger.nl/',
+    },
     {
         src: '/brands/TennisschoolFerdinandWerger.svg',
         alt: 'Tennisschool Ferdinand Werger',
+        href: '',
     },
-    { src: '/brands/LogoGertrudis.svg', alt: 'Logo Gertrudis' },
 ]
 
 const LOOP_DELAY = 1.5
@@ -243,15 +255,38 @@ export const Sponsors = () => {
                                                 styles['logo-wall-logo-target']
                                             }
                                         >
-                                            <Image
-                                                src={logo.src}
-                                                alt={logo.alt}
-                                                width={100}
-                                                height={40}
-                                                className={
-                                                    styles['logo-wall-logo-img']
-                                                }
-                                            />
+                                            {logo.href ? (
+                                                <a
+                                                    href={logo.href}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    aria-label={logo.alt}
+                                                >
+                                                    <Image
+                                                        src={logo.src}
+                                                        alt={logo.alt}
+                                                        width={100}
+                                                        height={40}
+                                                        className={
+                                                            styles[
+                                                                'logo-wall-logo-img'
+                                                            ]
+                                                        }
+                                                    />
+                                                </a>
+                                            ) : (
+                                                <Image
+                                                    src={logo.src}
+                                                    alt={logo.alt}
+                                                    width={100}
+                                                    height={40}
+                                                    className={
+                                                        styles[
+                                                            'logo-wall-logo-img'
+                                                        ]
+                                                    }
+                                                />
+                                            )}
                                         </div>
                                     </div>
                                 </div>
