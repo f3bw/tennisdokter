@@ -28,17 +28,21 @@ export const About = () => {
                         volwassenen en van recreatieve spelers t/m kinderen op
                         de nationale ranglijst. Als ervaren trainer werk je vaak
                         meer dan 20 seizoenen met fanatieke en talentvolle
-                        spelers!!
+                        spelers!
                     </p>
 
                     <p className={styles.text}>
                         Met mijn achtergrond en ervaring help ik tennissers
                         zichzelf te verbeteren door middel van persoonlijke
-                        video-analyse. Niet zoals vele trainers met YouTube
-                        video&apos;s over hoe toppers het doen, maar oplossingen
-                        op jouw niveau om dingen verder te brengen. Ik bekijk je
-                        video en geef concrete aanwijzingen en oplossingen.
-                        Custommade!
+                        video-analyse.
+                        <strong>
+                            &nbsp; Niet zoals vele trainers met YouTube
+                            video&apos;s over hoe toppers het doen, maar
+                            oplossingen op jouw niveau om dingen verder te
+                            brengen. &nbsp;
+                        </strong>
+                        Ik bekijk je video en geef concrete aanwijzingen en
+                        oplossingen. Custommade!
                     </p>
 
                     <ul className={styles.highlights}>

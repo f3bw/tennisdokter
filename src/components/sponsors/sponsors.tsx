@@ -24,13 +24,18 @@ const logos = [
     },
     {
         src: '/brands/logo.svg',
-        alt: 'Partner',
+        alt: 'Rabrice werger',
         href: 'https://www.fabricewerger.nl/',
     },
     {
         src: '/brands/TennisschoolFerdinandWerger.svg',
         alt: 'Tennisschool Ferdinand Werger',
         href: '',
+    },
+    {
+        src: '/brands/waterman.png',
+        alt: 'Waterman legal consultancy',
+        href: 'https://www.watermanlegal.nl/',
     },
 ]
 

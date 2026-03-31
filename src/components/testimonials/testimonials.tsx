@@ -20,12 +20,17 @@ const SLIDES = [
     {
         name: 'Joop',
         role: 'Niveau 8/7',
-        quote: 'Toen mij werd gevraagd iets te schrijven voor De Tennisdokter, ben ik teruggeblikt op het begin van mijn tennisavontuur. Het begon allemaal na mijn pensionering, een periode waarin sport nauwelijks een plek had in mijn leven. Via een kennis die al op een tennisschool zat, kwam ik voor het eerst in aanraking met tennis. Zij was op zoek naar een partner om samen te spelen en wist mij te overtuigen om samen een cursus te volgen bij haar tennisleraar, Ferdinand Werger. We kregen wekelijks samen een half uur les van hem. Kort daarna stopte mijn kennis, maar ik besloot door te gaan. Tennis begon mij steeds meer te bevallen. Ik ging vaker en intensiever spelen, ook met anderen in verschillende clubjes. Ondanks deze nieuwe contacten bleef ik trouw deelnemen aan zijn lessen. Zo ben ik in de afgelopen 15 jaar steeds fanatieker en beter geworden in het tennis, vooral dankzij zijn enthousiaste en zeer deskundige begeleiding. Inmiddels staat Ferdinand op het punt zijn 40-jarig jubileum te vieren. Het is bijzonder dat hij nu als ‘de Tennisdokter’ zijn deskundigheid op deze vernieuwende en toegankelijke wijze met iedereen wil delen – wat een geweldig initiatief! Ik wens jou veel succes en voldoening toe in jouw nieuwe rol als ‘De Tennisdokter’!',
+        quote: 'Tennis begon mij steeds meer te bevallen. Zo ben ik in de afgelopen 15 jaar steeds fanatieker en beter geworden in het tennis, vooral dankzij zijn enthousiaste en zeer deskundige begeleiding. Het is bijzonder dat hij nu als ‘de Tennisdokter’ zijn deskundigheid op deze vernieuwende wijze met iedereen wil delen – wat een geweldig initiatief!',
     },
     {
         name: 'Yvonne',
         role: 'Niveau 8',
         quote: 'Dankzij mijn tennisleraar Ferdinand Werger speel ik op gevorderde leeftijd nog met veel enthousiasme en plezier – en ik word nog steeds fanatieker en beter in het tennisspel! Hij is dé Tennisdokter bij uitstek en van harte aan te raden.',
+    },
+    {
+        name: 'Chantal',
+        role: 'Niveau 7',
+        quote: 'Door zijn passie voor de sport en zijn enorme technische kwaliteiten ga ik al jaren graag naar de lessen van Ferdinand. Tijdens de lessen geeft hij specifieke persoonlijke aanwijzingen en zo zorgt hij er steeds voor dat ik mijn spel kan blijven verbeteren. Heb al jaren met veel plezier les van hem en hoop nog veel meer van hem te kunnen leren!',
     },
 ]
 

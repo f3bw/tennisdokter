@@ -11,7 +11,6 @@ const FOOTER_LINKS = [
     { id: 'home', label: 'Home' },
     { id: 'over-mij', label: 'Over Mij' },
     { id: 'hoe-werkt-het', label: 'Hoe Werkt Het' },
-    { id: 'voor-trainers', label: 'Voor Trainers' },
     { id: 'ervaringen', label: 'Ervaringen' },
     { id: 'tarieven', label: 'Tarieven' },
     { id: 'partners', label: 'Partners' },
