@@ -42,12 +42,21 @@
     .image {
         display: flex;
         justify-content: center;
+        max-width: 220px;
+        margin-inline: auto;
+    }
+
+    @media (width >= 768px) {
+        .image {
+            max-width: 100%;
+            margin-inline: unset;
+        }
     }
 
     .image-photo {
         border-radius: var(--radius-lg);
         height: auto;
-        max-width: 300px;
+        max-width: 100%;
         object-fit: cover;
         width: 100%;
     }

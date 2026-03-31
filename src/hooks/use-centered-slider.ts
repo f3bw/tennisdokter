@@ -46,6 +46,7 @@ export const useCenteredSlider = (
                     let activeBullet: HTMLElement | undefined
                     let currentIndex = 0
                     let autoplay: gsap.core.Tween | null = null
+                    let elapsedAtPause = 0
 
                     const autoplayEnabled =
                         sliderWrapper.dataset.sliderAutoplay === 'true'
@@ -109,11 +110,19 @@ export const useCenteredSlider = (
 
                     const startAutoplay = () => {
                         if (autoplayDuration > 0 && !autoplay) {
+                            // Reset ring animation so it syncs with the new timer
+                            if (activeBullet) {
+                                activeBullet.removeAttribute('data-slider-active')
+                                void activeBullet.offsetWidth
+                                activeBullet.setAttribute('data-slider-active', '')
+                            }
+                            elapsedAtPause = 0
                             const repeat = () => {
                                 loop.next({
                                     ease: 'osmo-ease',
                                     duration: 0.725,
                                 })
+                                elapsedAtPause = 0
                                 autoplay = gsap.delayedCall(
                                     autoplayDuration,
                                     repeat
@@ -126,8 +135,27 @@ export const useCenteredSlider = (
                         }
                     }
 
+                    const resumeAutoplay = () => {
+                        if (autoplayDuration > 0 && !autoplay) {
+                            const remaining = Math.max(0, autoplayDuration - elapsedAtPause)
+                            const repeat = () => {
+                                loop.next({
+                                    ease: 'osmo-ease',
+                                    duration: 0.725,
+                                })
+                                elapsedAtPause = 0
+                                autoplay = gsap.delayedCall(
+                                    autoplayDuration,
+                                    repeat
+                                )
+                            }
+                            autoplay = gsap.delayedCall(remaining, repeat)
+                        }
+                    }
+
                     const stopAutoplay = () => {
                         if (autoplay) {
+                            elapsedAtPause = autoplay.time()
                             autoplay.kill()
                             autoplay = null
                         }
@@ -146,7 +174,7 @@ export const useCenteredSlider = (
                     const mouseEnterHandler = () => stopAutoplay()
                     const mouseLeaveHandler = () => {
                         if (ScrollTrigger.isInViewport(sliderWrapper))
-                            startAutoplay()
+                            resumeAutoplay()
                     }
                     sliderWrapper.addEventListener(
                         'mouseenter',

@@ -13,7 +13,6 @@ const NAV_SECTIONS: NavSection[] = [
     { id: 'home', label: 'Home' },
     { id: 'over-mij', label: 'Over' },
     { id: 'hoe-werkt-het', label: 'Werkwijze' },
-    { id: 'voor-trainers', label: 'Trainers' },
     { id: 'ervaringen', label: 'Ervaringen' },
     { id: 'tarieven', label: 'Tarieven' },
     { id: 'partners', label: 'Partners' },
@@ -31,6 +30,10 @@ export const ProgressNav = () => {
     const navLinksRef = useRef<HTMLDivElement>(null)
 
     const isOpen = navStatus === 'active'
+    const isOpenRef = useRef(isOpen)
+    useEffect(() => {
+        isOpenRef.current = isOpen
+    })
 
     const handleNavClick = useCallback(
         (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
@@ -61,14 +64,14 @@ export const ProgressNav = () => {
     // Handle escape key
     useEffect(() => {
         const handleKeyDown = (e: KeyboardEvent) => {
-            if (e.key === 'Escape' && isOpen) {
+            if (e.key === 'Escape' && isOpenRef.current) {
                 closeNav()
             }
         }
 
         document.addEventListener('keydown', handleKeyDown)
         return () => document.removeEventListener('keydown', handleKeyDown)
-    }, [isOpen, closeNav])
+    }, [closeNav])
 
     // Prevent body scroll when drawer is open
     useEffect(() => {
