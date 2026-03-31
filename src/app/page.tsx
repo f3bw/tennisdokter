@@ -8,7 +8,7 @@ import { Testimonials } from '@/components/testimonials'
 import { WhatsAppButton } from '@/components/whatsapp-button'
 
 const Home = () => {
-    return (
+return (
         <>
             <main>
                 <Hero />
