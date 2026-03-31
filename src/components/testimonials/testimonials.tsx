@@ -69,7 +69,7 @@ export const Testimonials = () => {
                     <div className={styles.content}>
                         <ul role="tablist" className={styles['bullet-list']}>
                             {SLIDES.map((slide, i) => (
-                                <li key={i} className={styles['bullet-item']}>
+                                <li key={i} role="presentation" className={styles['bullet-item']}>
                                     <button
                                         data-centered-slider="bullet"
                                         role="tab"

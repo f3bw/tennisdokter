@@ -25,8 +25,8 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
     robots: {
-        index: false,
-        follow: false,
+        index: true,
+        follow: true,
     },
     title: 'De Tennisdokter | Persoonlijk Videoadvies voor Tennis',
     description:
