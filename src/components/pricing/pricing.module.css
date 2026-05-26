@@ -140,4 +140,16 @@
         font-size: 0.9375rem;
         margin-top: var(--spacing-md);
     }
+
+    .consent {
+        color: var(--color-text-muted);
+        font-size: 0.8125rem;
+        margin-top: var(--spacing-2xs);
+    }
+
+    .consent-link {
+        color: var(--color-primary);
+        text-decoration: underline;
+        text-underline-offset: 2px;
+    }
 }

@@ -113,10 +113,18 @@ export const Footer = () => {
                     </div>
                 </div>
 
-                <p className={styles.copyright}>
-                    &copy; {currentYear} De Tennisdokter. Alle rechten
-                    voorbehouden.
-                </p>
+                <div className={styles['copyright-row']}>
+                    <p className={styles.copyright}>
+                        &copy; {currentYear} De Tennisdokter. Alle rechten
+                        voorbehouden.
+                    </p>
+                    <a
+                        href="/algemene-voorwaarden"
+                        className={styles['legal-link']}
+                    >
+                        Algemene Voorwaarden
+                    </a>
+                </div>
             </div>
         </footer>
     )

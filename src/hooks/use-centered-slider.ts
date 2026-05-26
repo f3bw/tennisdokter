@@ -7,15 +7,15 @@ import { type RefObject, useEffect } from 'react'
 
 import { horizontalLoop } from '@/utils/horizontal-loop'
 
-gsap.registerPlugin(CustomEase, ScrollTrigger, Draggable, InertiaPlugin)
-CustomEase.create('osmo-ease', '0.625, 0.05, 0, 1')
-
 export const useCenteredSlider = (
     containerRef: RefObject<HTMLElement | null>
 ) => {
     useEffect(() => {
         const container = containerRef.current
         if (!container) return
+
+        gsap.registerPlugin(CustomEase, ScrollTrigger, Draggable, InertiaPlugin)
+        CustomEase.create('osmo-ease', '0.625, 0.05, 0, 1')
 
         const ctx = gsap.context(() => {
             const cleanups: Array<() => void> = []
