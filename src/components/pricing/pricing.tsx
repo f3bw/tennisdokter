@@ -163,6 +163,13 @@ export const Pricing = () => {
                     Na ontvangst van je video-analyse stuur ik je een Tikkie.
                     Simpel en zonder gedoe.
                 </p>
+                <p className={styles.consent}>
+                    * Door contact op te nemen ga je akkoord met de{' '}
+                    <a href="/algemene-voorwaarden" className={styles['consent-link']}>
+                        algemene voorwaarden
+                    </a>
+                    .
+                </p>
             </div>
         </section>
     )

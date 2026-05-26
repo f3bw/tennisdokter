@@ -2,6 +2,7 @@
     /* ── Section ─────────────────────────────────────── */
 
     .section {
+        overflow: hidden;
         padding-bottom: var(--spacing-2xl);
         padding-top: var(--spacing-2xl);
     }
@@ -153,7 +154,6 @@
         display: flex;
         margin-bottom: 4em;
         margin-top: 2em;
-        overflow: clip;
         padding-bottom: 1em;
         padding-top: 1em;
         position: relative;
@@ -203,7 +203,7 @@
         outline-offset: calc(var(--gap) / -1);
         padding: calc(var(--gap) + var(--width));
         position: absolute;
-        transition: all 0.4s cubic-bezier(0.65, 0.05, 0, 1);
+        transition: opacity 0.4s cubic-bezier(0.65, 0.05, 0, 1);
         z-index: 1;
     }
 
@@ -315,6 +315,18 @@
         display: flex;
         justify-content: center;
         width: 1.25em;
+    }
+
+    /* ── Responsive: large desktop (all 5 fill the row) ─── */
+
+    @media screen and (min-width: 1025px) {
+        .slide {
+            width: 20vw;
+        }
+
+        .slide-inner {
+            width: 100%;
+        }
     }
 
     /* ── Responsive: small desktop / large tablet ───────── */

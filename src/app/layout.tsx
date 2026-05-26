@@ -6,7 +6,7 @@ import type { ReactNode } from 'react'
 import { DocumentTitle } from '@/components/document-title'
 import { IosPwaSplash } from '@/components/ios-pwa-splash'
 import { LenisProvider } from '@/components/lenis-provider'
-import { MagneticCursor } from '@/components/magnetic-cursor'
+import { MagneticCursorLazy } from '@/components/magnetic-cursor/magnetic-cursor-lazy'
 import { ProgressNav } from '@/components/progress-nav'
 import '@/styles/globals.css'
 
@@ -82,7 +82,7 @@ const RootLayout = ({
             </head>
             <body>
                 <LenisProvider>
-                    <MagneticCursor />
+                    <MagneticCursorLazy />
                     <DocumentTitle />
                     <ProgressNav />
                     {children}

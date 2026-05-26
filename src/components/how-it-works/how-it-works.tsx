@@ -5,9 +5,9 @@ import styles from './how-it-works.module.css'
 const steps = [
     {
         number: '1',
-        title: 'Film jezelf',
+        title: 'Film je slagtechniek',
         description:
-            'Maak een video van je slag (forehand, backhand, service, etc.) en stuur deze via WhatsApp samen met je vraag.',
+            'Maak een video van je slagtechniek (forehand, backhand, service, etc.) en stuur deze via WhatsApp samen met je vraag.',
         icon: (
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z" />
@@ -79,6 +79,13 @@ export const HowItWorks = () => {
                     >
                         Start nu via WhatsApp
                     </MagneticButton>
+                    <p className={styles.consent}>
+                        * Door contact op te nemen ga je akkoord met de{' '}
+                        <a href="/algemene-voorwaarden" className={styles['consent-link']}>
+                            algemene voorwaarden
+                        </a>
+                        .
+                    </p>
                 </div>
             </div>
         </section>
